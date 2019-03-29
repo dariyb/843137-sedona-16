@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Гомзякова](https://up.htmlacademy.ru/adaptive/16/user/843137).
-* Наставник: [Андрей Грачев] (https://htmlacademy.ru/profile/id252055).
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
 
 ---
 
