@@ -46,20 +46,20 @@
       <section class="review-form">
         <form class="review-form__feedback" action="https://echo.htmlacademy.ru" method="post">
           <div class="review-form__full-name">
-            <h3 class="review-form__title review-form__title--greeting">
+            <h2 class="review-form__title review-form__title--greeting">
               Представьтесь:
-            </h3>
+            </h2>
             <p class="review-form__first-name">
               <label for="your-first-name">
                 Имя*:
               </label>
-              <input class="review-form__text review-form__text--first-name" type="text" name="your-name" id="your-first-name" placeholder="Петр">
+              <input class="review-form__text review-form__text--first-name" type="text" name="your-name" id="your-first-name" placeholder="Петр" required>
             </p>
             <p class="review-form__last-name">
               <label for="your-last-name">
                 Фамилия*:
               </label>
-              <input class="review-form__text review-form__text--last-name" type="text" name="ur-last-name" id="your-last-name" placeholder="Иванов">
+              <input class="review-form__text review-form__text--last-name" type="text" name="ur-last-name" id="your-last-name" placeholder="Иванов" required>
             </p>
             <p class="review-form__surname">
               <label for="your-surname">
@@ -67,6 +67,31 @@
               </label>
               <input class="review-form__text review-form__text--surname" type="text" name="ur-surname" id="your-surname" placeholder="Александрович">
             </p>
+          </div>
+          <div class="review-form__contact-info">
+            <h2 class="review-form__title review-form__title--contacts">
+              Контактная информация:
+            </h2>
+            <p class="review-form__phone-number">
+              <label for="mobile-number">
+                Контактный телефон*:
+              </label>
+              <input class="review-form__text review-form__text--your-phone-number" type="tel" name="telephone" id="mobile-number" placeholder="Введите телефон" required>
+            </p>
+            <p class="review-form__email">
+              <label for="your-email">
+                Электронная почта*:
+              </label>
+              <input class="review-form__text review-form__text--email" type="email" name="email" id="your-email" placeholder="Введите e-mail" required>
+            </p>
+          </div>
+          <div class="review-form__general-impression">
+            <p class="review-form__first-impression">
+            <label for="positive-impression">
+              Скорее положительное
+            </label>
+            <input class="review-form__radio" type="radio" name="impression" value="positive" id="positive-impression" checked>
+          </p>
           </div>
         </form>
       </section>
