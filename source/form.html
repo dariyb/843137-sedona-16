@@ -145,35 +145,11 @@
               Опишите подробно все свои восторги
             </textarea>
             <p class="review-form__send-review">
-              <button class="review-form__button" type="button">
+              <button class="review-form__button" type="submit">
               Отправить отзыв
               </button>
             </p>
           </fieldset>
-          <div class="review-form__pop-up">
-            <div class="review-form__wrapper">
-              <h2 class="review-form__title review-form__title--smt-wrong">
-                Что-то пошло не так!
-              </h2>
-              <p class="review-form__pop-up-text review-form__pop-up-text--error">
-                Проверьте поля, выделенные красным, скорее все вы забыли их заполнить
-              </p>
-              <button class="review-form__ok" type="button">
-                ОК
-              </button>
-            </div>
-            <div class="review-form__wrapper">
-              <h2 class="review-form__title review-form__title--sended-review">
-                Ваш отзыв отправлен!
-              </h2>
-              <p class="review-form__pop-up-text review-form__pop-up-text--feedback">
-                Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-              </p>
-              <button class="review-form__close-pop-up" type="button">
-                Закрыть окно
-              </button>
-            </div>
-          </div>
         </form>
       </section>
     </main>
@@ -209,5 +185,27 @@
         </a>
       </p>
     </footer>
+    <div class="pop-up pop-up--error">
+        <h2 class="pop-up__title pop-up__title--smt-wrong">
+          Что-то пошло не так!
+        </h2>
+        <p class="pop-up__text pop-up__text--blanck-box">
+          Проверьте поля, выделенные красным, скорее все вы забыли их заполнить
+        </p>
+        <button class="pop-up__button pop-up__button--ok" type="button">
+          ОК
+        </button>
+    </div>
+    <div class="pop-up pop-up--review">
+        <h2 class="pop-up__title pop-up__title--sended-review">
+          Ваш отзыв отправлен!
+        </h2>
+        <p class="pop-up__text pop-up__text--thank-you">
+          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+        </p>
+        <button class="pop-up__button pop-up__button--close" type="button">
+          Закрыть окно
+        </button>
+    </div>
   </body>
 </html>
