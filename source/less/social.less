@@ -1,9 +1,25 @@
 .social__list {
   list-style: none;
-  margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 84px;
 }
 
 .social__item {
   background-color: rgba(129, 179, 210);
+  width: 46px;
+}
+
+@media (min-width: 768px) {
+  .social__list {
+    margin: 0 52px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social__list {
+    width: 151px;
+    margin: auto;
+  }
 }
