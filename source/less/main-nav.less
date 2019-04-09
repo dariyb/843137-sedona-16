@@ -1,6 +1,8 @@
 .main-nav {
   background-color: rgba(255, 255, 255);
   outline: 2px solid #ff0c00;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .main-nav__toggle {
@@ -17,4 +19,36 @@
   line-height: 40px;
   margin: 0;
   padding: 0;
+  /* temp */
+  min-height: 223px;
+}
+
+@media (min-width: 768px) {
+  .main-nav {
+    width: 768px;
+    margin: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    margin: 0;
+    background-color: rgba(255, 255, 255);
+    /* temp */
+    min-height: 57px;
+  }
+
+  .site-list__item {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-nav__list {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255);
+    color: rgba(0, 0, 0);
+  }
 }
