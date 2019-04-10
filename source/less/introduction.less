@@ -1,7 +1,11 @@
 .introduction {
   outline: 2px solid #92991f;
   background-color: rgba(255, 255, 255);
-  margin: 0;
+  margin: 0 auto;
+  width: 320px;
+  text-align: center;
+  /*temp*/
+  min-height: 189px;
 }
 
 .introduction__title {
@@ -9,10 +13,54 @@
   line-height: 26px;
   color: rgba(0, 0, 0);
   font-weight: 700;
+  margin: 0;
+  padding: 41px 90px;
+  padding-bottom: 33px;
 }
 
 .introduction__text {
   font-size: 14px;
   line-height: 24px;
   color: rgba(51, 51, 51);
+  margin: 0;
+  padding: 0 20px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .introduction {
+    margin: 0;
+    width: 768px;
+    /*temp*/
+    min-height: 248px;
+  }
+
+  .introduction__title {
+    padding: 72px 277px;
+    padding-bottom: 29px;
+  }
+
+  .introduction__text {
+    padding: 0 165px;
+    padding-bottom: 72px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .introduction {
+    margin: 0 auto;
+    width: 1200px;
+    /*temp*/
+    min-height: 288px;
+  }
+
+  .introduction__title {
+    padding: 108px 488px;
+    padding-bottom: 30px;
+  }
+
+  .introduction__text {
+    padding: 0 382px;
+    padding-bottom: 74px;
+  }
 }
