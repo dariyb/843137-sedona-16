@@ -11,24 +11,170 @@
   line-height: 26px;
   font-weight: 700;
   color: rgba(0, 0, 0);
+  margin: 0;
+  padding: 36px 52px;
+  padding-bottom: 0;
+  text-align: center;
 }
 
 .video__text {
   font-size: 14px;
   line-height: 24px;
   color: rgba(51, 51, 51);
+  text-align: center;
+  padding: 0 40px;
+  margin: 0;
+  margin-top: 33px;
+  padding-bottom: 38px;
 }
 
 .video__control {
   background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  margin: 0 20px;
+  /*t*/
+  min-height: 45px;
 }
 
 .video__scale {
   background-color: rgba(255, 255, 255, 0.2);
   height: 3px;
   width: 235px;
+  margin: 0;
+  position: absolute;
+  top: 22px;
+  left: 23px;
+}
+
+.video__handle {
+  position: absolute;
+  top: 19px;
+  left: 63px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255);
+  border: 5px solid rgba(255, 255, 255);
+  border-radius: 50px 50px 50px 50px;
 }
 
 .video__control-board {
   background-color: rgba(242, 242, 242);
+  margin: 0 20px;
+  /*t*/
+  min-height: 66px;
+}
+
+.video__rewind {
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  width: 70px;
+  border: 0;
+}
+
+.video__subs {
+  padding: 0;
+  margin: 0;
+  width: 70px;
+  border: 0;
+  margin-left: 62px;/*t*/
+  margin-top: 20px;
+}
+
+.video__full-view {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: 70px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .video__title {
+    margin: 0;
+    padding: 63px 208px;
+    padding-bottom: 0;
+  }
+
+  .video__text {
+    padding: 0 177px;
+    margin: 0;
+    margin-top: 29px;
+    padding-bottom: 77px;
+  }
+
+  .video__wrapper {
+    padding: 0 60px;
+  }
+
+  .video__control {
+    margin: 0;
+    /*t*/
+    min-height: 92px;
+  }
+
+  .video__scale {
+    width: 389px;
+    top: 45px;
+    left: 93px;
+  }
+
+  .video__handle {
+    top: 42px;
+    left: 211px;
+  }
+
+  .video__control-board {
+    background-color: transparent;
+    min-height: 92px;/*t*/
+    position: relative;
+    bottom: 92px;
+    margin: 0;
+  }
+
+  .video__rewind {
+    margin-top: 35px;
+    margin-left: 23px;
+  }
+
+  .video__subs {
+    margin-left: 407px;/*t*/
+    margin-top: 36px;
+  }
+
+  .video__full-view {
+    margin-top: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video__title {
+    margin: 0;
+    padding: 69px 422px;
+    padding-bottom: 0;
+  }
+
+  .video__text {
+    padding: 0 393px;
+    margin: 0;
+    margin-top: 34px;
+    padding-bottom: 73px;
+  }
+
+  .video__wrapper {
+    padding: 0 200px;
+  }
+
+  .video__scale {
+    width: 540px;
+    left: 92px;
+  }
+
+  .video__handle {
+    left: 210px;
+  }
+
+  .video__subs {
+    margin-left: 559px;/*t*/
+  }
 }

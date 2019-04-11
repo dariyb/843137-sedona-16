@@ -6,6 +6,8 @@
 .review-form__full-name {
   border: 0;
   background-color: rgba(255, 255, 255);
+  padding: 0 20px;
+  margin: 0;
 }
 
 .review-form__title {
@@ -13,6 +15,35 @@
   line-height: 26px;
   font-weight: 700;
   color: rgba(0, 0, 0);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  &--greeting {
+    padding: 22px 70px;
+    padding-bottom: 0;
+  }
+
+  &--contacts {
+    padding: 22px 19px;
+    padding-bottom: 0;
+  }
+
+  &--your-general-impression {
+    padding: 22px 22px;
+    padding-bottom: 0;
+  }
+
+  &--visited-seesights {
+    padding: 21px 20px;
+    padding-bottom: 0;
+  }
+
+  &--express-emotions {
+    margin: 0;
+    padding: 22px 32px;
+    padding-bottom: 0;
+  }
 }
 
 .review-form__first-name {
@@ -20,6 +51,8 @@
   line-height: 26px;
   color: rgba(51, 51, 51);
   font-weight: 400;
+  margin: 0;
+  margin-top: 25px;
 }
 
 .review-form__text {
@@ -29,34 +62,83 @@
   color: rgba(0, 0, 0);
   background-color: rgba(242, 242, 242);
   border: 0;
+  padding-top: 16px;
+  padding-left: 20px;
+  padding-bottom: 16px;
+
+  &--first-name {
+    width: 206px;
+    margin-left: 13px;
+  }
+
+  &--last-name {
+    margin-left: 13px;
+    width: 169px;
+  }
+
+  &--surname {
+    margin-left: 16px;
+    width: 171px;
+  }
+
+  &--your-phone-number {
+    width: 202px;
+  }
+
+  &--email {
+    width: 202px;
+  }
 }
 
 .review-form__last-name {
   font-size: 14px;
   line-height: 26px;
   color: rgba(51, 51, 51);
+  margin: 20px 0;
 }
 
 .review-form__surname {
   font-size: 14px;
   line-height: 26px;
   color: rgba(51, 51, 51);
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .review-form__contact-info {
   border: 0;
   background-color: rgba(255, 255, 255);
+  padding: 0 20px;
 }
 
 .review-form__phone-number {
   font-size: 14px;
   line-height: 26px;
   color: rgba(51, 51, 51);
+  width: 280px;
+  margin-top: 28px;
+  margin-bottom: 18px;
+}
+
+.review-form__email {
+  font-size: 14px;
+  line-height: 26px;
+  color: rgba(51, 51, 51);
+  margin-top: 0;
+  margin-bottom: 28px;
 }
 
 .review-form__general-impression {
   border: 0;
   background-color: rgba(255, 255, 255);
+  padding: 0 20px;
+  margin: 0;
+}
+
+.review-form__radio {
+  padding: 0;
+  margin: 0;
+  margin-right: 22px;
 }
 
 .review-form__first-option {
@@ -65,6 +147,8 @@
   line-height: 26px;
   font-weight: 700;
   color: rgba(0, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 12px;
 }
 
 .review-form__second-option {
@@ -73,6 +157,8 @@
   line-height: 26px;
   font-weight: 700;
   color: rgba(0, 0, 0);
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .review-form__third-option {
@@ -81,11 +167,21 @@
   line-height: 26px;
   font-weight: 700;
   color: rgba(0, 0, 0);
+  margin-top: 0;
+  margin-bottom: 26px;
 }
 
 .review-form__seesight {
   border: 0;
   background-color: rgba(255, 255, 255);
+  padding: 0 20px;
+  margin: 0;
+}
+
+.review-form__checkbox {
+  margin: 0;
+  margin-right: 24px;
+  padding: 0;
 }
 
 .review-form__first-seesight {
@@ -94,6 +190,8 @@
   font-weight: 700;
   color: rgba(0, 0, 0);
   text-transform: none;
+  margin-top: 20px;
+  margin-bottom: 24px;
 }
 
 .review-form__second-seesight {
@@ -102,6 +200,8 @@
   font-weight: 700;
   color: rgba(0, 0, 0);
   text-transform: none;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .review-form__third-seesight {
@@ -110,6 +210,8 @@
   font-weight: 700;
   color: rgba(0, 0, 0);
   text-transform: none;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .review-form__fourth-seesight {
@@ -118,11 +220,15 @@
   font-weight: 700;
   color: rgba(0, 0, 0);
   text-transform: none;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .review-form__emotions {
   border: 0;
   background-color: rgba(255, 255, 255);
+  padding: 0 20px;
+  margin: 0;
 }
 
 .review-form__textarea {
@@ -133,6 +239,14 @@
   background-color: rgba(242, 242, 242);
   border: 0;
   padding: 0;
+  margin-top: 20px;
+  margin-bottom: 51px;
+  width: 280px;
+  height: 160px;
+}
+
+.review-form__send-review {
+  margin: 0;
 }
 
 .review-form__button {
@@ -143,4 +257,7 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 16px 33px;
+  margin: 0;
+  width: 280px;
 }

@@ -8,10 +8,42 @@
   line-height: 26px;
   font-weight: 700;
   color: rgba(0, 0, 0);
+  margin: 0;
+  padding: 40px 63px;
+  padding-bottom: 0;
+  text-align: center;
 }
 
 .review__text {
   font-size: 14px;
   line-height: 24px;
   color: rgba(51, 51, 51);
+  padding: 0 20px;
+  margin: 0;
+  margin-top: 32px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .review__title {
+    padding: 70px 221px;
+  }
+
+  .review__text {
+    padding: 0 164px;
+    padding-bottom: 75px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review__title {
+    padding: 107px 440px;
+    padding-bottom: 0;
+  }
+
+  .review__text {
+    padding: 0 380px;
+    padding-bottom: 65px;
+  }
 }
