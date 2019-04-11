@@ -1,6 +1,8 @@
 .description {
   background-color: rgba(255, 255, 255);
   outline: 2px solid #ff00c6;
+  /* temp */
+  min-height: 222px;
 }
 
 .description__intro {
@@ -8,10 +10,48 @@
   line-height: 26px;
   color: rgba(0, 0, 0);
   font-weight: 700;
+  padding-top: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 35px;
+  margin: 0;
+  text-align: center;
 }
 
 .description__reasons {
   font-size: 14px;
   line-height: 26px;
   color: rgba(51, 51, 51);
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 28px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .description__intro {
+    padding-top: 50px;
+    padding-left: 128px;
+    padding-right: 128px;
+    padding-bottom: 35px;
+  }
+
+  .description__reasons {
+    padding-left: 128px;
+    padding-right: 128px;
+    padding-bottom: 58px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .description__intro {
+    padding: 50px 350px;
+    padding-bottom: 34px;
+  }
+
+  .description__reasons {
+    padding: 54px 350px;
+    padding-top: 0;
+  }
 }

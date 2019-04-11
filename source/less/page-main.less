@@ -1,7 +1,41 @@
 .page-main {
   background-color: rgba(255, 255, 255);
-  background-image: url("../img/mobile-m.jpg");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   outline: 2px solid #0012ff;
+}
+
+.page-main__logo-wrapper {
+  /* temp */
+  min-height: 389px;
+}
+
+.page-main__logo-intro {
+  height: 215px;
+}
+
+@media (min-width: 768px) {
+  .page-main__logo-wrapper {
+    width: 768px;
+    margin: 0;
+    /*temp*/
+    min-height: 515px;
+  }
+
+  .page-main__logo-intro {
+    width: 498px;
+    height: 376px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-main__logo-wrapper {
+    width: 1200px;
+    margin: 0;
+  }
+
+  .page-main__logo-intro {
+    height: 215px;
+  }
 }
