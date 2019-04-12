@@ -227,8 +227,8 @@
 .review-form__emotions {
   border: 0;
   background-color: rgba(255, 255, 255);
-  padding: 0 20px;
   margin: 0;
+  padding: 0 20px;
 }
 
 .review-form__textarea {
@@ -238,7 +238,6 @@
   color: rgba(0, 0, 0);
   background-color: rgba(242, 242, 242);
   border: 0;
-  padding: 0;
   margin-top: 20px;
   margin-bottom: 51px;
   width: 280px;
@@ -262,7 +261,21 @@
   width: 280px;
 }
 
+.review-form__required {
+  display: none;
+}
+
 @media (min-width: 768px) {
+  .review-form__required {
+    display: block;
+    text-transform: uppercase;
+    width: 196px;
+    margin: 0;
+    margin-left: 128px;
+    padding-top: 24px;
+    text-align: right;
+  }
+
   .review-form__feedback {
     display: flex;
     flex-wrap: wrap;
@@ -450,11 +463,14 @@
     margin-top: 60px;
     width: 100%;
     margin-bottom: 58px;
+    padding-top: 20px;
+    padding-left: 20px;
   }
 
   .review-form__send-review {
-    width: 324px;
+    width: 100%;
     margin: 0;
+    display: flex;
   }
 
   .review-form__button {
@@ -466,15 +482,22 @@
 }
 
 @media (min-width: 1200px) {
+  .review-form__required {
+    margin-left: 284px;
+    margin-bottom: 68px;
+  }
+
   .review-form__feedback {
     display: flex;
     flex-wrap: wrap;
     padding: 0 120px;
   }
 
+  .review-form__no-show {
+    display: none;
+  }
+
   .review-form__general-impression {
-    order: 1;
-    padding: 0;
     width: 480px;
     margin-bottom: 50px;
     /*t*/
@@ -483,28 +506,13 @@
 
   .review-form__full-name {
     width: 480px;
-    order: 2;
-    padding: 0;
     /*t*/
     min-height: 310px;
   }
 
   .review-form__contact-info {
-    display: flex;
-  }
-
-  .review-form__seesight {
-    order: 4;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-
-  .review-form__emotions {
-    order: 5;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+    /*t*/
+    min-height: 213px;
   }
 
   .review-form__title {
@@ -520,12 +528,7 @@
     }
 
     &--visited-seesights {
-      padding: 0 183px;
-    }
-
-    &--express-emotions {
-      padding: 0;
-      width: 100%;
+      padding: 0 340px;
     }
   }
 
@@ -548,19 +551,21 @@
 
     &--your-phone-number {
       width: 258px;
+      margin-left: 15px;
     }
 
     &--email {
       width: 258px;
+      margin-left: 16px;
     }
   }
 
   .review-form__m-number {
-    margin-left: 22px;
+    margin-left: 0;
   }
 
   .review-form__e-mail {
-    margin-left: 22px;
+    margin-left: 0;
   }
 
   .review-form__first-name {
@@ -591,6 +596,10 @@
     margin-bottom: 12px;
   }
 
+  .review-form__info-wrapper {
+    display: flex;
+  }
+
   .review-form__phone-number {
     width: 400px;
     margin: 0;
@@ -602,6 +611,7 @@
     width: 480px;
     margin-top: 76px;
     margin-bottom: 56px;
+    margin-left: 80px;
   }
 
   .review-form__seesight-wrapper {
@@ -610,49 +620,43 @@
   }
 
   .review-form__first-seesight {
-    width: 229px;
+    width: 206px;
     margin: 0;
-    margin-top: 43px;
-    margin-bottom: 32px;
-    margin-left: 95px;
+    margin-top: 42px;
+    margin-bottom: 68px;
+    margin-left: 0;
   }
 
   .review-form__second-seesight {
-    width: 294px;
-    margin-top: 43px;
-    margin-bottom: 32px;
-    margin-left: 30px;
+    width: 206px;
+    margin-top: 42px;
+    margin-bottom: 68px;
+    margin-left: 53px;
   }
 
   .review-form__third-seesight {
-    margin-top: 0;
-    width: 229px;
-    margin-left: 95px;
-    margin-bottom: 71px;
+    margin-top: 42px;
+    width: 206px;
+    margin-left: 53px;
+    margin-bottom: 68px;
   }
 
   .review-form__fourth-seesight {
-    margin-top: 0;
-    width: 294px;
+    margin-top: 42px;
+    width: 206px;
     margin-left: 30px;
-    margin-bottom: 71px;
+    margin-bottom: 68px;
   }
 
   .review-form__textarea {
-    margin-top: 60px;
-    width: 100%;
-    margin-bottom: 58px;
-  }
-
-  .review-form__send-review {
-    width: 324px;
-    margin: 0;
+    padding-left: 20px;
+    padding-top: 20px;
   }
 
   .review-form__button {
-    padding: 16px 55px;
+    padding: 16px 133px;
     margin: 0;
-    width: 324px;
-    margin-bottom: 62px;
+    width: 480px;
+    margin-bottom: 68px;
   }
 }

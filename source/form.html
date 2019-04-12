@@ -74,18 +74,22 @@
             <legend class="review-form__title review-form__title--contacts">
               Контактная информация:
             </legend>
-            <p class="review-form__phone-number">
-              <label class="review-form__m-number" for="mobile-number">
-                Контактный телефон*:
-              </label>
-              <input class="review-form__text review-form__text--your-phone-number" type="tel" name="telephone" id="mobile-number" placeholder="Введите телефон" required>
-            </p>
-            <p class="review-form__email">
-              <label class="review-form__e-mail" for="your-email">
-                Электронная почта*:
-              </label>
-              <input class="review-form__text review-form__text--email" type="email" name="email" id="your-email" placeholder="Введите e-mail" required>
-            </p>
+            <div class="review-form__info-wrapper">
+              <p class="review-form__phone-number">
+                <label class="review-form__m-number" for="mobile-number">
+                  <span class="review-form__no-show">
+                    Контактный
+                  </span> телефон*:
+                </label>
+                <input class="review-form__text review-form__text--your-phone-number" type="tel" name="telephone" id="mobile-number" placeholder="Введите телефон" required>
+              </p>
+              <p class="review-form__email">
+                <label class="review-form__e-mail" for="your-email">
+                  Электронная почта*:
+                </label>
+                <input class="review-form__text review-form__text--email" type="email" name="email" id="your-email" placeholder="Введите e-mail" required>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="review-form__general-impression">
             <legend class="review-form__title review-form__title--your-general-impression">
@@ -146,11 +150,14 @@
               Опишите свои эмоции:
             </legend>
             <textarea class="review-form__textarea" name="text-emotions" rows="6" cols="26">Опишите подробно все свои восторги</textarea>
-            <p class="review-form__send-review">
+            <div class="review-form__send-review">
               <button class="review-form__button" type="submit">
-              Отправить отзыв
+                Отправить отзыв
               </button>
-            </p>
+              <p class="review-form__required">
+                * — обязательные поля
+              </p>
+            </div>
           </fieldset>
         </form>
       </section>
