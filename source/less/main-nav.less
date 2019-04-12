@@ -1,11 +1,60 @@
 .main-nav {
   background-color: rgba(255, 255, 255);
-  outline: 2px solid #ff0c00;
+  position: relative;
 }
 
 .main-nav__toggle {
-  color: rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255);
+  position: absolute;
+  top: 224px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 63px;
+  height: 53px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
   background-color: rgba(129, 179, 210);
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-cross.svg");
+    background-repeat: no-repeat;
+    background-color: rgba(129, 179, 210);
+    top: 16px;
+    right: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 240px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-menu.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .main-nav__list {
@@ -17,19 +66,23 @@
   line-height: 40px;
   margin: 0;
   padding: 0;
-  /* temp */
-  min-height: 223px;
 }
 
 @media (min-width: 768px) {
+  .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav__list {
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(0, 0, 0);
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     width: 768px;
     margin: 0;
     background-color: rgba(255, 255, 255);
-    /* temp */
-    min-height: 57px;
+    padding: 15px 0;
   }
 }
 
@@ -37,7 +90,23 @@
   .main-nav__list {
     width: 1200px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255);
-    color: rgba(0, 0, 0);
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+
+  .main-nav--closed .main-nav__toggle {
+    top: 0;
   }
 }

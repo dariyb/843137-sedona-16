@@ -1,6 +1,45 @@
 .reasons-list__item {
-  padding: 22px 20px;
-  padding-bottom: 0;
+  padding: 0 20px;
+
+  &--food {
+    padding-bottom: 38px;
+  }
+}
+
+.reasons-list__item--housing::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 20px;
+  left: 21px;
+  width: 39px;
+  height: 37px;
+}
+
+.reasons-list__item--gift::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 150px;
+  left: 25px;
+  width: 32px;
+  height: 38px;
+}
+
+.reasons-list__item--food::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-burger.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 266px;
+  left: 18px;
+  width: 40px;
+  height: 35px;
 }
 
 .reasons-list__title {
@@ -10,7 +49,8 @@
   color: rgba(0, 0, 0);
   margin: 0;
   margin-left: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+  margin-top: 29px;
 }
 
 .reasons-list__description {

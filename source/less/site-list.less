@@ -1,20 +1,44 @@
 .site-list__item {
-  min-height: 56px;
-  width: 320px;
+  text-align: center;
 }
+
+.site-list__item a {
+  padding: 8px 0;
+  display: block;
+
+  &:hover {
+    background-color: rgba(102, 158, 192);
+  }
+
+  &:disabled {
+    background-color: rgba(84, 150, 189);
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 
 @media (min-width: 768px) {
   .site-list__item a {
     color: rgba(0, 0, 0);
+    padding: 0;
   }
 
   .site-list__item {
     width: 20%;
+    padding: 0;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: 152px;
   }
 }
 
 @media (min-width: 1200px) {
   .site-list__item {
     width: 240px;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: 240px;
   }
 }
