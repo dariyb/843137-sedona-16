@@ -74,18 +74,22 @@
             <legend class="review-form__title review-form__title--contacts">
               Контактная информация:
             </legend>
-            <p class="review-form__phone-number">
-              <label for="mobile-number">
-                Контактный телефон*:
-              </label>
-              <input class="review-form__text review-form__text--your-phone-number" type="tel" name="telephone" id="mobile-number" placeholder="Введите телефон" required>
-            </p>
-            <p class="review-form__email">
-              <label for="your-email">
-                Электронная почта*:
-              </label>
-              <input class="review-form__text review-form__text--email" type="email" name="email" id="your-email" placeholder="Введите e-mail" required>
-            </p>
+            <div class="review-form__info-wrapper">
+              <p class="review-form__phone-number">
+                <label class="review-form__m-number" for="mobile-number">
+                  <span class="review-form__no-show">
+                    Контактный
+                  </span> телефон*:
+                </label>
+                <input class="review-form__text review-form__text--your-phone-number" type="tel" name="telephone" id="mobile-number" placeholder="Введите телефон" required>
+              </p>
+              <p class="review-form__email">
+                <label class="review-form__e-mail" for="your-email">
+                  Электронная почта*:
+                </label>
+                <input class="review-form__text review-form__text--email" type="email" name="email" id="your-email" placeholder="Введите e-mail" required>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="review-form__general-impression">
             <legend class="review-form__title review-form__title--your-general-impression">
@@ -114,41 +118,46 @@
             <legend class="review-form__title review-form__title--visited-seesights">
               Посещенные достопримечательности:
             </legend>
-            <p class="review-form__first-seesight">
-              <input class="review-form__checkbox" type="checkbox" name="bridge" id="devils-bridge" checked>
-              <label for="devils-bridge">
-                Мост Дьявола
-              </label>
-            </p>
-            <p class="review-form__second-seesight">
-              <input class="review-form__checkbox" type="checkbox" name="mountain" id="bell-mountain" checked>
-              <label for="bell-mountain">
-                Гора-Колокол
-              </label>
-            </p>
-            <p class="review-form__third-seesight">
-              <input class="review-form__checkbox" type="checkbox" name="park" id="slade-park" checked>
-              <label for="slade-park">
-                Слайд-парк
-              </label>
-            </p>
-            <p class="review-form__fourth-seesight">
-              <input class="review-form__checkbox" type="checkbox" name="cliff" id="red-cliff">
-              <label for="red-cliff">
-                Красные скалы
-              </label>
-            </p>
+            <div class="review-form__seesight-wrapper">
+              <p class="review-form__first-seesight">
+                <input class="review-form__checkbox" type="checkbox" name="bridge" id="devils-bridge" checked>
+                <label for="devils-bridge">
+                  Мост Дьявола
+                </label>
+              </p>
+              <p class="review-form__second-seesight">
+                <input class="review-form__checkbox" type="checkbox" name="mountain" id="bell-mountain" checked>
+                <label for="bell-mountain">
+                  Гора-Колокол
+                </label>
+              </p>
+              <p class="review-form__third-seesight">
+                <input class="review-form__checkbox" type="checkbox" name="park" id="slade-park" checked>
+                <label for="slade-park">
+                  Слайд-парк
+                </label>
+              </p>
+              <p class="review-form__fourth-seesight">
+                <input class="review-form__checkbox" type="checkbox" name="cliff" id="red-cliff">
+                <label for="red-cliff">
+                  Красные скалы
+                </label>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="review-form__emotions">
             <legend class="review-form__title review-form__title--express-emotions">
               Опишите свои эмоции:
             </legend>
-            <textarea class="review-form__textarea" name="text-emotions" rows="5" cols="26">Опишите подробно все свои восторги</textarea>
-            <p class="review-form__send-review">
+            <textarea class="review-form__textarea" name="text-emotions" rows="6" cols="26">Опишите подробно все свои восторги</textarea>
+            <div class="review-form__send-review">
               <button class="review-form__button" type="submit">
-              Отправить отзыв
+                Отправить отзыв
               </button>
-            </p>
+              <p class="review-form__required">
+                * — обязательные поля
+              </p>
+            </div>
           </fieldset>
         </form>
       </section>
@@ -197,15 +206,17 @@
         </button>
     </div>
     <div class="pop-up pop-up--review">
-        <h2 class="pop-up__title pop-up__title--sended-review">
-          Ваш отзыв отправлен!
-        </h2>
-        <p class="pop-up__text pop-up__text--thank-you">
-          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
-        </p>
+      <h2 class="pop-up__title pop-up__title--sent-review">
+        Ваш отзыв отправлен!
+      </h2>
+      <p class="pop-up__text pop-up__text--thank-you">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+      </p>
+      <p class="pop-up__close-wrapper">
         <button class="pop-up__button pop-up__button--close" type="button">
           Закрыть окно
         </button>
+      </p>
     </div>
     </div>
   </body>
