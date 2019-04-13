@@ -1,10 +1,7 @@
 .page-footer {
   background-color: rgba(254, 254, 254, 0.9);
-  outline: 2px solid #cc00ff;
   display: flex;
   flex-direction: column;
-  /*temp*/
-  min-height: 243px;
 }
 
 .page-footer__hashtag {
@@ -13,16 +10,19 @@
   line-height: 26px;
   font-weight: 700;
   margin: 0;
-  padding: 40px 90px;
+  padding: 36px 92px;
   padding-bottom: 0;
 }
 
 .page-footer__social {
-  margin: 40px 0;
+  margin: 35px 0;
 }
 
 .page-footer__copyright {
   margin: 0 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -30,8 +30,7 @@
     flex-direction: row;
     text-align: center;
     justify-content: space-between;
-    /*temp*/
-    min-height: 120px;
+    padding: 36px 0;
   }
 
   .page-footer__hashtag {
