@@ -10,10 +10,14 @@
     background-color: rgba(102, 158, 192);
   }
 
-  &:disabled {
+  &:active {
     background-color: rgba(84, 150, 189);
     color: rgba(255, 255, 255, 0.3);
   }
+}
+
+.reasons-list__mobile-hidden {
+  display: none;
 }
 
 
@@ -21,6 +25,32 @@
   .site-list__item a {
     color: rgba(0, 0, 0);
     padding: 0;
+
+    &:hover {
+      color: rgba(129, 179, 210);
+      background-color: rgba(255, 255, 255);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(255, 255, 255);
+    }
+  }
+
+  .site-list__item--current a {
+    color: rgba(118, 99, 87);
+
+    &:hover {
+      color: rgba(96, 78, 67);
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
+  }
+
+  .reasons-list__mobile-hidden {
+    display: inline;
   }
 
   .site-list__item {
