@@ -1,5 +1,7 @@
 .search {
   background-color: rgba(255, 255, 255);
+  height: 637px;/*t*/
+  overflow: hidden;/*t*/
 }
 
 .search__title {
@@ -29,7 +31,6 @@
   text-align: center;
   background-color: rgba(129, 179, 210);
   margin-bottom: 49px;
-  padding: 17px 0;
 }
 
 .search__link {
@@ -38,9 +39,29 @@
   color: rgba(255, 255, 255);
   font-weight: 700;
   background-color: rgba(129, 179, 210);
+  padding: 17px 48px;
+
+  &:hover {
+    background-color: rgba(102, 158, 192);
+  }
+
+  &:active {
+    background-color: rgba(102, 158, 192);
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: rgba(229, 229, 229);
+    color: rgba(255, 255, 255);
+  }
 }
 
 @media (min-width: 768px) {
+  .search {
+    height: 668px;/*t*/
+    overflow: hidden;/*t*/
+  }
+
   .search__title {
     margin: 0;
     padding: 53px 233px;
@@ -61,6 +82,11 @@
 }
 
 @media (min-width: 1200px) {
+  .search {
+    height: 681px;/*t*/
+    overflow: hidden;/*t*/
+  }
+
   .search__title {
     margin: 0;
     padding: 53px 448px;
