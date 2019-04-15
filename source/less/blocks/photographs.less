@@ -1,8 +1,5 @@
 .photographs {
-  outline: 2px solid #e9ab6e;
   background-color: rgba(255, 255, 255);
-  /*t*/
-  min-height: 1660px;
 }
 
 .photographs__list {
@@ -16,8 +13,8 @@
 .photographs__item {
   padding: 0 20px;
   margin: 22px 0;
-  /*t*/
-  min-height: 415px;
+  margin-bottom: 18px;
+  position: relative;
 }
 
 .photographs__title {
@@ -25,8 +22,8 @@
   line-height: 24px;
   font-weight: 700;
   color: rgba(0, 0, 0);
-  margin-top: 20px;
-  margin-bottom: 8px;
+  margin-top: 9px;
+  margin-bottom: 0;
 }
 
 .photographs__author {
@@ -43,6 +40,18 @@
   padding-right: 14px;
   border: none;
   background-color: rgba(255, 255, 255);
+  margin-right: 20px;
+}
+
+.photographs__like-button::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 21px;
+  top: 93.4%;
+  left: 6.5%;
 }
 
 .photographs__like {
@@ -71,8 +80,6 @@
     width: 324px;
     display: flex;
     flex-wrap: wrap;
-    /*t*/
-    min-height: 347px;
   }
 
   .photographs__wrapper {
@@ -80,20 +87,18 @@
     width: 238px;
     margin: 0;
     padding: 0;
-    /*t*/
-    min-height: 80px;
+    padding-bottom: 17px;
   }
 
   .photographs__title {
     margin: 0;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 20px;
   }
 
   .photographs__author {
     margin: 0;
     margin-left: 20px;
-    margin-bottom: 20px;
   }
 
   .photographs__like {
@@ -107,10 +112,30 @@
     padding-right: 10px;
   }
 
+  .photographs__like-button::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-like.svg");
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 21px;
+    top: 85%;
+    left: 74%;
+  }
+
+  .photographs__item:first-child .photographs__like-button::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-like.svg");
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 21px;
+    top: 89.2%;
+    left: 87.3%;
+  }
+
   .photographs__item:first-child {
     width: 100%;
-    /*t*/
-    min-height: 480px;
   }
 
   /*temp*/
@@ -131,16 +156,14 @@
 
   /*--------------*/
   .photographs__item:first-child .photographs__title {
-    padding-top: 20px;
+    padding-top: 15px;
     margin: 0;
     margin-left: 20px;
-    margin-bottom: 10px;
   }
 
   .photographs__item:first-child .photographs__author {
     margin: 0;
     margin-left: 20px;
-    padding-bottom: 20px;
   }
 
   .photographs__item:first-child .photographs__like {
@@ -157,6 +180,7 @@
   .photographs {
     /*t*/
     min-height: 668px;
+    overflow: hidden;
   }
 
   .photographs__list {
@@ -165,8 +189,7 @@
 
   .photographs__item {
     width: 400px;
-    /*t*/
-    min-height: 267px;
+    position: relative;
   }
   /*t*/
   .photographs__link {
@@ -177,32 +200,58 @@
   .photographs__wrapper {
     background-color: rgba(0, 0, 0, 0.3);
     width: 280px;
-    margin: 0;
-    padding: 0;
+    padding-bottom: 17px;
     z-index: 5;
+    position: absolute;
+    align-self: flex-end;
   }
 
   .photographs__title,
   .photographs__author {
     color: rgba(255, 255, 255);
+    margin-left: 22px;
   }
 
   .photographs__like {
     background-color: rgba(0, 0, 0, 0.3);
     width: 120px;
     padding-top: 28px;
+    color: rgba(255, 255, 255);
+    position: absolute;
+    align-self: flex-end;
+    right: 0;
+    padding-bottom: 28px;
   }
 
   .photographs__like-button {
     background-color: rgba(0, 0, 0, 0.3);
     color: rgba(255, 255, 255);
     padding-right: 10px;
+    margin-left: 34px;
+  }
+
+  .photographs__like-button::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-like-white.svg");
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 21px;
+    top: 34.6%;
+    left: 30%;
   }
 
   .photographs__item:first-child {
     width: 1200px;
-    /*t*/
-    min-height: 400px;
+    position: relative;
+  }
+
+  .photographs__item:first-child .photographs__title {
+    margin-left: 22px;
+  }
+
+  .photographs__item:first-child .photographs__author {
+    margin-left: 22px;
   }
 
   .photographs__item:first-child .photographs__link {
@@ -212,13 +261,30 @@
 
   .photographs__item:first-child .photographs__wrapper {
     width: 1000px;
+    position: absolute;
+    align-self: flex-end;
   }
 
   .photographs__item:first-child .photographs__like {
     width: 200px;
+    position: absolute;
+    align-self: flex-end;
+    right: 0;
+    padding-bottom: 28px;
   }
 
   .photographs__item:first-child .photographs__like-button {
     margin-left: 114px;
+  }
+
+  .photographs__item:first-child .photographs__like-button::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-like-white.svg");
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 21px;
+    top: 34.6%;
+    left: 58%;
   }
 }

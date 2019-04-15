@@ -9,10 +9,17 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+
+  &--other-pages {
+    padding-top: 51px;
+    background-position: 55% 100%;
+  }
 }
 
-.page-main__logo-wrapper--other-pages {
-  padding-top: 52px;
+.page-main__logo-wrapper--other-pages .page-main__logo-intro {
+  padding-bottom: 66px;
+  width: 232px;
+  height: 41px;
 }
 
 .page-main__logo-wrapper::after {
@@ -26,6 +33,10 @@
   background-repeat: no-repeat;
   bottom: -1px;
   background-size: cover;
+}
+
+.page-main__logo-wrapper--other-pages::after {
+  bottom: 0;
 }
 
 .page-main__logo-intro {
@@ -43,11 +54,27 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+
+
+    &--other-pages {
+      padding-top: 96px;
+      background-position: 55% 100%;
+    }
+  }
+
+  .page-main__logo-wrapper--other-pages .page-main__logo-intro {
+    padding-bottom: 116px;
+    width: 460px;
+    height: 76px;
   }
 
   .page-main__logo-wrapper::after {
     background-image: url("../img/bg-intro-triangle-tablet.svg");
     height: 57px;
+  }
+
+  .page-main__logo-wrapper--other-pages::after {
+    bottom: -1px;
   }
 
   .page-main__logo-intro {
@@ -61,10 +88,25 @@
   .page-main__logo-wrapper {
     padding-top: 78px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    &--other-pages {
+      padding-top: 101px;
+      background-position: 100% 100%;
+    }
+  }
+
+  .page-main__logo-wrapper--other-pages .page-main__logo-intro {
+    padding-bottom: 119px;
+    width: 460px;
+    height: 82px;
   }
 
   .page-main__logo-wrapper::after {
     background-image: url("../img/bg-intro-triangle-desktop.svg");
     height: 57px;
+  }
+
+  .page-main__logo-wrapper--other-pages::after {
+    bottom: 0;
   }
 }
