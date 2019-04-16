@@ -1,8 +1,6 @@
 .video {
   background-color: rgba(255, 255, 255);
-  /*t*/
-  height: 499px;
-  overflow: hidden;
+  padding-bottom: 39px;
 }
 
 .video__text-unit {
@@ -15,7 +13,7 @@
   font-weight: 700;
   color: rgba(0, 0, 0);
   margin: 0;
-  padding: 36px 52px;
+  padding: 31.5px 52px;
   padding-bottom: 0;
   text-align: center;
 }
@@ -27,16 +25,21 @@
   text-align: center;
   padding: 0 40px;
   margin: 0;
-  margin-top: 33px;
-  padding-bottom: 38px;
+  margin-top: 26px;
+  padding-bottom: 35px;
+}
+
+.video__wrapper {
+  position: relative;
+  height: 267px;
 }
 
 .video__control {
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
   margin: 0 20px;
-  /*t*/
-  min-height: 45px;
+  height: 45px;
+  bottom: 51px;
 }
 
 .video__scale {
@@ -52,19 +55,20 @@
 .video__handle {
   position: absolute;
   top: 19px;
-  left: 63px;
+  left: 58px;
   margin: 0;
   padding: 0;
   background-color: rgba(255, 255, 255);
-  border: 5px solid rgba(255, 255, 255);
+  border: 4.5px solid rgba(255, 255, 255);
   border-radius: 50px 50px 50px 50px;
 }
 
 .video__control-board {
   background-color: rgba(242, 242, 242);
   margin: 0 20px;
-  /*t*/
-  min-height: 66px;
+  height: 66px;
+  position: absolute;
+  bottom: 0;
 }
 
 .video__rewind {
@@ -73,6 +77,11 @@
   margin-top: 20px;
   width: 70px;
   border: 0;
+  background-color: transparent;
+}
+
+.video__rewind svg {
+  margin-right: 4px;
 }
 
 .video__subs {
@@ -82,6 +91,12 @@
   border: 0;
   margin-left: 62px;/*t*/
   margin-top: 20px;
+  background-color: transparent;
+}
+
+.video__subs svg {
+  margin-top: 3px;
+  margin-left: 39px;
 }
 
 .video__full-view {
@@ -90,18 +105,23 @@
   border: 0;
   width: 70px;
   margin-top: 20px;
+  background-color: transparent;
+}
+
+.video__full-view svg {
+  margin-left: 6px;
 }
 
 @media (min-width: 768px) {
   .video {
-    /*t*/
-    height: 783px;
-    overflow: hidden;
+    padding-bottom: 36px;
   }
 
   .video__title {
+    font-size: 30px;
+    line-height: 26px;
     margin: 0;
-    padding: 63px 208px;
+    padding: 66px 208px;
     padding-bottom: 0;
   }
 
@@ -114,12 +134,13 @@
 
   .video__wrapper {
     padding: 0 60px;
+    height: 500px;
   }
 
   .video__control {
     margin: 0;
-    /*t*/
-    min-height: 92px;
+    height: 92px;
+    top: 39.3%;
   }
 
   .video__scale {
@@ -130,14 +151,14 @@
 
   .video__handle {
     top: 42px;
-    left: 211px;
+    left: 206px;
   }
 
   .video__control-board {
     background-color: transparent;
-    min-height: 92px;/*t*/
+    height: 92px;
     position: relative;
-    bottom: 92px;
+    bottom: -21%;
     margin: 0;
   }
 
@@ -154,11 +175,40 @@
   .video__full-view {
     margin-top: 36px;
   }
+
+  .video__rewind path {
+    fill: rgba(255, 255, 255);
+  }
+
+  .video__subs path {
+    fill: rgba(255, 255, 255);
+  }
+
+  .video__full-view polygon {
+    fill: rgba(255, 255, 255);
+  }
+
+  .video__rewind svg {
+    margin-bottom: 11px;
+    margin-right: 29px;
+  }
+
+  .video__subs svg {
+    margin-left: 3px;
+    margin-bottom: 11px;
+    margin-top: 0;
+  }
+
+  .video__full-view svg {
+    margin-bottom: 11px;
+    margin-right: 29px;
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 1200px) {
   .video {
-    height: 830px;/*t*/
+    padding-bottom: 86px;
   }
 
   .video__title {
@@ -168,14 +218,18 @@
   }
 
   .video__text {
-    padding: 0 393px;
+    padding: 0 391px;
     margin: 0;
-    margin-top: 34px;
-    padding-bottom: 73px;
+    margin-top: 31px;
+    padding-bottom: 71px;
   }
 
   .video__wrapper {
     padding: 0 200px;
+  }
+
+  .video__control {
+    top: 40%;
   }
 
   .video__scale {
@@ -183,11 +237,25 @@
     left: 92px;
   }
 
-  .video__handle {
-    left: 210px;
+  .video__control-board {
+    bottom: -21.6%;
   }
 
   .video__subs {
     margin-left: 559px;/*t*/
+  }
+
+  .video__rewind svg {
+    margin-bottom: 13px;
+  }
+
+  .video__subs svg {
+    margin-left: 0;
+    margin-bottom: 11px;
+  }
+
+  .video__full-view svg {
+    margin-bottom: 12px;
+    margin-right: 32px;
   }
 }
