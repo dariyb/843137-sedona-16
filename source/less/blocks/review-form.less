@@ -118,6 +118,7 @@
   background-color: rgba(255, 255, 255);
   padding: 0 20px;
   margin: 0;
+  border-bottom: 1px solid rgba(229, 229, 229);
 }
 
 .review-form__phone-number {
@@ -177,14 +178,36 @@
   border: 0;
   background-color: rgba(255, 255, 255);
   padding: 0 20px;
+  padding-bottom: 16px;
   margin: 0;
+  border-bottom: 1px solid rgba(229, 229, 229);
 }
 
 .review-form__radio {
   padding: 0;
   margin: 0;
   margin-right: 22px;
-  position: relative;
+}
+
+.review-form__radio-choice::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  width: 56px;
+  height: 56px;
+  background-image: url("../img/icon-radio-no.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.review-form__radio:checked + .review-form__radio-choice::before {
+  background-image: url("../img/icon-radio.svg");
+  width: 56px;
+}
+
+.review-form__radio-choice {
+  margin-left: 78px;
 }
 
 .review-form__first-option {
@@ -193,20 +216,9 @@
   line-height: 26px;
   font-weight: 700;
   color: rgba(0, 0, 0);
-  margin-top: 25px;
-  margin-bottom: 12px;
-}
-
-.review-form__radio::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 56px;
-  height: 56px;
-  background-image: url("../img/icon-radio.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  margin-top: 37px;
+  margin-bottom: 43px;
+  position: relative;
 }
 
 .review-form__second-option {
@@ -216,7 +228,8 @@
   font-weight: 700;
   color: rgba(0, 0, 0);
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 43px;
+  position: relative;
 }
 
 .review-form__third-option {
@@ -227,6 +240,7 @@
   color: rgba(0, 0, 0);
   margin-top: 0;
   margin-bottom: 26px;
+  position: relative;
 }
 
 .review-form__seesight {
@@ -234,6 +248,7 @@
   background-color: rgba(255, 255, 255);
   padding: 0 20px;
   margin: 0;
+  border-bottom: 1px solid rgba(229, 229, 229);
 }
 
 .review-form__checkbox {
