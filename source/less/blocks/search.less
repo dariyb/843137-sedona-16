@@ -1,7 +1,5 @@
 .search {
   background-color: rgba(255, 255, 255);
-  height: 637px;/*t*/
-  overflow: hidden;/*t*/
 }
 
 .search__title {
@@ -10,7 +8,7 @@
   font-weight: 700;
   color: rgba(0, 0, 0);
   margin: 0;
-  padding: 30px 55px;
+  padding: 28px 55px;
   padding-bottom: 0;
   text-align: center;
 }
@@ -22,7 +20,7 @@
   color: rgba(51, 51, 51);
   padding: 0 28px;
   margin-top: 20px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -30,7 +28,7 @@
   margin: 0 20px;
   text-align: center;
   background-color: rgba(129, 179, 210);
-  margin-bottom: 49px;
+  margin-bottom: 65px;
 }
 
 .search__link {
@@ -39,7 +37,8 @@
   color: rgba(255, 255, 255);
   font-weight: 700;
   background-color: rgba(129, 179, 210);
-  padding: 17px 48px;
+  padding: 15px 48px;
+  padding-bottom: 16px;
 
   &:hover {
     background-color: rgba(102, 158, 192);
@@ -56,52 +55,86 @@
   }
 }
 
-@media (min-width: 768px) {
-  .search {
-    height: 668px;/*t*/
-    overflow: hidden;/*t*/
-  }
+.search__map {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
 
+.search__map-interactive {
+  position: absolute;
+  width: 320px;
+  height: 350px;
+  z-index: 10;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search__map-interactive iframe {
+  border: 0;
+  width: 320px;
+}
+
+@media (min-width: 768px) {
   .search__title {
+    font-size: 30px;
+    line-height: 26px;
     margin: 0;
-    padding: 53px 233px;
+    padding: 56px 233px;
     padding-bottom: 0;
   }
 
   .search__text {
     padding: 0 164px;
-    margin-top: 28px;
-    margin-bottom: 45px;
+    margin-top: 30px;
+    margin-bottom: 42px;
   }
 
   .search__wrapper-link {
     margin: 0 155px;
     margin-bottom: 58px;
     padding: 17px 0;
+    padding-bottom: 15px;
+  }
+
+  .search__link {
+    padding-bottom: 15px;
+  }
+
+  .search__map-interactive {
+    width: 768px;
+  }
+
+  .search__map-interactive iframe {
+    width: 768px;
   }
 }
 
 @media (min-width: 1200px) {
-  .search {
-    height: 681px;/*t*/
-    overflow: hidden;/*t*/
-  }
-
   .search__title {
     margin: 0;
-    padding: 53px 448px;
+    padding: 55px 448px;
     padding-bottom: 0;
   }
 
   .search__text {
     padding: 0 382px;
-    margin-top: 32px;
-    margin-bottom: 49px;
+    margin-bottom: 47px;
   }
 
   .search__wrapper-link {
     margin: 0 371px;
     margin-bottom: 66px;
     padding: 17px 0;
+    padding-bottom: 15px;
+  }
+
+  .search__map-interactive {
+    width: 1200px;
+  }
+
+  .search__map-interactive iframe {
+    width: 1200px;
   }
 }
