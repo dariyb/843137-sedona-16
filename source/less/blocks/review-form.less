@@ -7,6 +7,7 @@
   background-color: rgba(255, 255, 255);
   padding: 0 20px;
   margin: 0;
+  border-bottom: 1px solid rgba(229, 229, 229);
 }
 
 .review-form__title {
@@ -19,18 +20,20 @@
   padding: 0;
 
   &--greeting {
-    padding: 22px 70px;
+    padding: 17px 69px;
     padding-bottom: 0;
+    padding-left: 67px;
   }
 
   &--contacts {
-    padding: 22px 19px;
+    padding: 17px 14px;
     padding-bottom: 0;
   }
 
   &--your-general-impression {
-    padding: 22px 22px;
+    padding: 18px 18px;
     padding-bottom: 0;
+    padding-left: 17px;
   }
 
   &--visited-seesights {
@@ -51,7 +54,7 @@
   color: rgba(51, 51, 51);
   font-weight: 400;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 22px;
 }
 
 .review-form__text {
@@ -66,27 +69,33 @@
   padding-bottom: 16px;
 
   &--first-name {
-    width: 206px;
-    margin-left: 13px;
+    width: 209px;
+    margin-left: 10px;
   }
 
   &--last-name {
-    margin-left: 13px;
-    width: 169px;
+    margin-left: 11px;
+    width: 171px;
   }
 
   &--surname {
-    margin-left: 16px;
-    width: 171px;
+    margin-left: 14px;
+    width: 173px;
   }
 
   &--your-phone-number {
     width: 202px;
+    margin-top: 7px;
   }
 
   &--email {
     width: 202px;
+    margin-top: 7px;
   }
+}
+
+.review-form__text::placeholder {
+  color: rgba(0, 0, 0);
 }
 
 .review-form__last-name {
@@ -108,6 +117,7 @@
   border: 0;
   background-color: rgba(255, 255, 255);
   padding: 0 20px;
+  margin: 0;
 }
 
 .review-form__phone-number {
@@ -115,8 +125,39 @@
   line-height: 26px;
   color: rgba(51, 51, 51);
   width: 280px;
-  margin-top: 28px;
-  margin-bottom: 18px;
+  margin-top: 21px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.review-form__m-number {
+  margin-left: 22px;
+}
+
+.review-form__phone-number::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 58px;
+  background-color: rgba(230, 230, 230);
+  top: 36%;
+  right: 0;
+}
+
+.review-form__email::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-mail.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 58px;
+  background-color: rgba(230, 230, 230);
+  top: 36%;
+  right: 0;
 }
 
 .review-form__email {
@@ -125,6 +166,11 @@
   color: rgba(51, 51, 51);
   margin-top: 0;
   margin-bottom: 28px;
+  position: relative;
+}
+
+.review-form__e-mail {
+  margin-left: 10px;
 }
 
 .review-form__general-impression {
@@ -138,6 +184,7 @@
   padding: 0;
   margin: 0;
   margin-right: 22px;
+  position: relative;
 }
 
 .review-form__first-option {
@@ -148,6 +195,18 @@
   color: rgba(0, 0, 0);
   margin-top: 25px;
   margin-bottom: 12px;
+}
+
+.review-form__radio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 56px;
+  height: 56px;
+  background-image: url("../img/icon-radio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .review-form__second-option {

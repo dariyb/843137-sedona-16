@@ -185,6 +185,11 @@
 }
 
 @media (min-width: 1200px) {
+  .photographs__item:not(:first-child):nth-child(odd) .photographs__wrapper,
+  .photographs__item:not(:first-child):nth-child(odd) .photographs__like {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
   .photographs {
     /*t*/
     min-height: 668px;

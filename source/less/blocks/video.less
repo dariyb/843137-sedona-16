@@ -84,6 +84,14 @@
   margin-right: 4px;
 }
 
+.video__rewind:hover path {
+  fill: rgba(51, 51, 51);
+}
+
+.video__rewind:active path {
+  fill: rgba(51, 51, 51, 0.3);
+}
+
 .video__subs {
   padding: 0;
   margin: 0;
@@ -99,6 +107,14 @@
   margin-left: 39px;
 }
 
+.video__subs:hover path {
+  fill: rgba(51, 51, 51);
+}
+
+.video__subs:active path {
+  fill: rgba(51, 51, 51, 0.3);
+}
+
 .video__full-view {
   margin: 0;
   padding: 0;
@@ -110,6 +126,14 @@
 
 .video__full-view svg {
   margin-left: 6px;
+}
+
+.video__full-view:hover polygon {
+  fill: rgba(51, 51, 51);
+}
+
+.video__full-view:active polygon {
+  fill: rgba(51, 51, 51, 0.3);
 }
 
 @media (min-width: 768px) {
@@ -180,12 +204,36 @@
     fill: rgba(255, 255, 255);
   }
 
+  .video__rewind:hover path {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .video__rewind:active path {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
   .video__subs path {
     fill: rgba(255, 255, 255);
   }
 
+  .video__subs:hover path {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .video__subs:active path {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
   .video__full-view polygon {
     fill: rgba(255, 255, 255);
+  }
+
+  .video__full-view:hover polygon {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .video__full-view:active polygon {
+    fill: rgba(255, 255, 255, 0.3);
   }
 
   .video__rewind svg {
