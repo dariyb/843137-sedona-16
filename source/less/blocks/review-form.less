@@ -37,13 +37,13 @@
   }
 
   &--visited-seesights {
-    padding: 21px 20px;
+    padding: 19px 20px;
     padding-bottom: 0;
   }
 
   &--express-emotions {
     margin: 0;
-    padding: 22px 32px;
+    padding: 18px 32px;
     padding-bottom: 0;
   }
 }
@@ -249,6 +249,7 @@
   padding: 0 20px;
   margin: 0;
   border-bottom: 1px solid rgba(229, 229, 229);
+  padding-bottom: 16px;
 }
 
 .review-form__checkbox {
@@ -263,8 +264,9 @@
   font-weight: 700;
   color: rgba(0, 0, 0);
   text-transform: none;
-  margin-top: 20px;
-  margin-bottom: 24px;
+  margin-top: 30px;
+  margin-bottom: 54px;
+  position: relative;
 }
 
 .review-form__second-seesight {
@@ -274,7 +276,8 @@
   color: rgba(0, 0, 0);
   text-transform: none;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 55px;
+  position: relative;
 }
 
 .review-form__third-seesight {
@@ -284,7 +287,8 @@
   color: rgba(0, 0, 0);
   text-transform: none;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 54px;
+  position: relative;
 }
 
 .review-form__fourth-seesight {
@@ -295,6 +299,28 @@
   text-transform: none;
   margin-top: 0;
   margin-bottom: 25px;
+  position: relative;
+}
+
+.review-form__checkbox-choice::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  width: 56px;
+  height: 56px;
+  background-color: rgba(242, 242, 242);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.review-form__checkbox:checked + .review-form__checkbox-choice::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.review-form__checkbox-choice {
+  margin-left: 79px;
 }
 
 .review-form__emotions {
@@ -311,14 +337,17 @@
   color: rgba(0, 0, 0);
   background-color: rgba(242, 242, 242);
   border: 0;
-  margin-top: 20px;
-  margin-bottom: 51px;
-  width: 280px;
-  height: 160px;
+  margin-top: 18px;
+  margin-bottom: 44px;
+  padding-top: 15px;
+  padding-left: 21px;
+  padding-right: 0;
+  padding-bottom: 15px;
 }
 
 .review-form__send-review {
   margin: 0;
+  margin-bottom: 37px;
 }
 
 .review-form__button {

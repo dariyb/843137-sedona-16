@@ -1,6 +1,20 @@
 .pop-up {
   background-color: rgba(255, 255, 255);
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  width: 320px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+  &--error {
+    z-index: 25;
+  }
+
+  &--review {
+    z-index: 20;
+  }
 }
 
 .pop-up__title {
