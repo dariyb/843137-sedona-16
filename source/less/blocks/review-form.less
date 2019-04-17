@@ -368,13 +368,21 @@
 }
 
 @media (min-width: 768px) {
+  .review-form__email::after {
+    top: 35.8%;
+  }
+
+  .review-form__second-seesight .review-form__checkbox-choice::before {
+    top: -15px;
+  }
+
   .review-form__required {
     display: block;
     text-transform: uppercase;
     width: 196px;
     margin: 0;
     margin-left: 128px;
-    padding-top: 24px;
+    padding-top: 20px;
     text-align: right;
   }
 
@@ -388,16 +396,46 @@
     order: 1;
     padding: 0;
     width: 324px;
-    /*t*/
-    min-height: 371px;
+    border-bottom: 0;
+  }
+
+  .review-form__seesight::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    top: 25px;
+    background-color: rgba(219, 219, 219);
+    right: 0;
+  }
+
+  .review-form__seesight::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    top: 25px;
+    background-color: rgba(219, 219, 219);
+    left: 0;
   }
 
   .review-form__full-name {
     width: 324px;
     order: 2;
     padding: 0;
-    /*t*/
-    min-height: 371px;
+    border-bottom: 0;
+    margin-bottom: 70px;
+    position: relative;
+  }
+
+  .review-form__full-name::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 292px;
+    background-color: rgba(219, 219, 219);
+    top: 0;
+    right: 100%;
   }
 
   .review-form__contact-info {
@@ -405,15 +443,37 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    /*t*/
-    min-height: 308px;
+    border: 0;
+    position: relative;
+  }
+
+  .review-form__contact-info::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    top: 12px;
+    background-color: rgba(219, 219, 219);
+    left: 0;
+  }
+
+  .review-form__contact-info::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    top: 12px;
+    background-color: rgba(219, 219, 219);
+    right: 0;
   }
 
   .review-form__seesight {
+    border: 0;
     order: 4;
     padding: 0;
     margin: 0;
     width: 100%;
+    position: relative;
   }
 
   .review-form__emotions {
@@ -421,9 +481,13 @@
     padding: 0;
     margin: 0;
     width: 100%;
+    position: relative;
   }
 
   .review-form__title {
+    font-size: 21px;
+    line-height: 26px;
+
     &--greeting {
       padding: 0;
       width: 267px;
@@ -451,23 +515,30 @@
     &--express-emotions {
       padding: 0;
       width: 100%;
+      padding-top: 13px;
     }
+  }
+
+  .review-form__radio-choice {
+    margin-left: 76px;
   }
 
   .review-form__text {
     &--first-name {
-      margin-left: 14px;
+      margin-left: 11px;
       width: 192px;
+      padding-right: 2px;
     }
 
     &--last-name {
-      margin-left: 13px;
+      margin-left: 12px;
       width: 156px;
     }
 
     &--surname {
-      margin-left: 16px;
+      margin-left: 14px;
       width: 158px;
+      padding-right: 2px;
     }
 
     &--your-phone-number {
@@ -488,7 +559,7 @@
   }
 
   .review-form__first-name {
-    margin-top: 59px;
+    margin-top: 58px;
     margin-left: 57px;
   }
 
@@ -499,32 +570,31 @@
 
   .review-form__surname {
     margin-left: 57px;
-    margin-bottom: 72px;
+    margin-bottom: 0;
   }
 
   .review-form__first-option {
-    margin-top: 60px;
-    margin-bottom: 22px;
+    margin-top: 72px;
+    margin-bottom: 53px;
   }
 
   .review-form__second-option {
     margin-top: 0;
-    margin-bottom: 22px;
+    margin-bottom: 53px;
   }
 
   .review-form__third-option {
     margin-top: 0;
-    margin-bottom: 72px;
+    margin-bottom: 0;
   }
 
   .review-form__phone-number {
     width: 100%;
-    margin-top: 32px;
-    margin-bottom: 29px;
+    margin: 25px 0;
   }
 
   .review-form__email {
-    margin-bottom: 56px;
+    margin-bottom: 52px;
   }
 
   .review-form__seesight-wrapper {
@@ -535,14 +605,14 @@
   .review-form__first-seesight {
     width: 229px;
     margin: 0;
-    margin-top: 43px;
-    margin-bottom: 32px;
+    margin-top: 58px;
+    margin-bottom: 62px;
     margin-left: 95px;
   }
 
   .review-form__second-seesight {
     width: 294px;
-    margin-top: 43px;
+    margin-top: 58px;
     margin-bottom: 32px;
     margin-left: 30px;
   }
@@ -562,11 +632,11 @@
   }
 
   .review-form__textarea {
-    margin-top: 60px;
-    width: 100%;
-    margin-bottom: 58px;
-    padding-top: 20px;
-    padding-left: 20px;
+    margin-top: 58px;
+    width: 626px;
+    margin-bottom: 53px;
+    padding-top: 15px;
+    padding-left: 22px;
   }
 
   .review-form__send-review {
@@ -579,7 +649,7 @@
     padding: 16px 55px;
     margin: 0;
     width: 324px;
-    margin-bottom: 62px;
+    margin-bottom: 60px;
   }
 }
 
