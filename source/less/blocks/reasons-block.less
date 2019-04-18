@@ -193,6 +193,11 @@
     padding-left: 59px;
     margin-bottom: 21px;
   }
+
+  .reasons-block__unit:first-child::after,
+  .reasons-block__unit:nth-child(2)::after {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -299,4 +304,17 @@
   text-align: center;
   /*temp*/
   min-height: 167px;
+  position: relative;
+}
+
+.reasons-block__unit:first-child::after,
+.reasons-block__unit:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 1px;
+  bottom: 0;
+  left: 20px;
+  background-color: rgba(0, 0, 0);
+  opacity: 0.1;
 }

@@ -1,5 +1,6 @@
 .review {
   background-color: rgba(255, 255, 255);
+  border-bottom: 1px solid rgba(229, 229, 229);
 }
 
 .review__title {
@@ -8,7 +9,7 @@
   font-weight: 700;
   color: rgba(0, 0, 0);
   margin: 0;
-  padding: 40px 63px;
+  padding: 37px 63px;
   padding-bottom: 0;
   text-align: center;
 }
@@ -19,30 +20,38 @@
   color: rgba(51, 51, 51);
   padding: 0 20px;
   margin: 0;
-  margin-top: 32px;
-  padding-bottom: 22px;
+  margin-top: 29px;
+  padding-bottom: 17px;
   text-align: center;
 }
 
 @media (min-width: 768px) {
+  .review {
+    border-bottom: 0;
+  }
+
   .review__title {
-    padding: 70px 221px;
+    font-size: 30px;
+    line-height: 26px;
+    padding: 76px 221px;
+    padding-bottom: 0;
   }
 
   .review__text {
-    padding: 0 164px;
+    padding: 0 163px;
     padding-bottom: 75px;
+    margin-top: 33px;
   }
 }
 
 @media (min-width: 1200px) {
   .review__title {
-    padding: 107px 440px;
+    padding: 111px 436px;
     padding-bottom: 0;
   }
 
   .review__text {
     padding: 0 380px;
-    padding-bottom: 65px;
+    padding-bottom: 58px;
   }
 }

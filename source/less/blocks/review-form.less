@@ -2,11 +2,41 @@
   background-color: rgba(255, 255, 255);
 }
 
+.review-form__checkbox-choice:hover::before {
+  background-color: rgba(229, 229, 229);
+}
+
+.review-form__checkbox-choice:active::before {
+  background-color: rgba(213, 213, 213);
+}
+
+.review-form__checkbox:checked:active + .review-form__checkbox-choice:active::before {
+  background-image: url("../img/icon-tick-a.svg");
+  background-color: rgba(213, 213, 213);
+}
+
+.review-form__radio-choice:hover::before {
+  background-image: url("../img/icon-radio-no-h.svg");
+}
+
+.review-form__radio:checked:hover + .review-form__radio-choice:hover::before {
+  background-image: url("../img/icon-radio-h.svg");
+}
+
+.review-form__radio-choice:active::before {
+  background-image: url("../img/icon-radio-no-a.svg");
+}
+
+.review-form__radio:checked:active + .review-form__radio-choice:active::before {
+  background-image: url("../img/icon-radio-a.svg");
+}
+
 .review-form__full-name {
   border: 0;
   background-color: rgba(255, 255, 255);
   padding: 0 20px;
   margin: 0;
+  border-bottom: 1px solid rgba(229, 229, 229);
 }
 
 .review-form__title {
@@ -19,28 +49,30 @@
   padding: 0;
 
   &--greeting {
-    padding: 22px 70px;
+    padding: 17px 69px;
     padding-bottom: 0;
+    padding-left: 67px;
   }
 
   &--contacts {
-    padding: 22px 19px;
+    padding: 20px 14px;
     padding-bottom: 0;
   }
 
   &--your-general-impression {
-    padding: 22px 22px;
+    padding: 18px 18px;
     padding-bottom: 0;
+    padding-left: 17px;
   }
 
   &--visited-seesights {
-    padding: 21px 20px;
+    padding: 19px 20px;
     padding-bottom: 0;
   }
 
   &--express-emotions {
     margin: 0;
-    padding: 22px 32px;
+    padding: 18px 32px;
     padding-bottom: 0;
   }
 }
@@ -51,7 +83,7 @@
   color: rgba(51, 51, 51);
   font-weight: 400;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 23px;
 }
 
 .review-form__text {
@@ -60,33 +92,50 @@
   font-weight: 700;
   color: rgba(0, 0, 0);
   background-color: rgba(242, 242, 242);
-  border: 0;
-  padding-top: 16px;
-  padding-left: 20px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-left: 16px;
+  padding-bottom: 12px;
+  border: 4px solid rgba(242, 242, 242);
 
   &--first-name {
-    width: 206px;
-    margin-left: 13px;
+    width: 205px;
+    margin-left: 10px;
   }
 
   &--last-name {
-    margin-left: 13px;
-    width: 169px;
+    margin-left: 11px;
+    width: 167px;
   }
 
   &--surname {
-    margin-left: 16px;
-    width: 171px;
+    margin-left: 14px;
+    width: 169px;
   }
 
   &--your-phone-number {
     width: 202px;
+    margin-top: 7px;
   }
 
   &--email {
     width: 202px;
+    margin-top: 7px;
   }
+}
+
+.review-form__text:hover {
+  background-color: rgba(229, 229, 229);
+  border-color: rgba(229, 229, 229);
+}
+
+.review-form__text:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255);
+  border: 4px solid rgba(229, 229, 229);
+}
+
+.review-form__text::placeholder {
+  color: rgba(0, 0, 0);
 }
 
 .review-form__last-name {
@@ -108,6 +157,8 @@
   border: 0;
   background-color: rgba(255, 255, 255);
   padding: 0 20px;
+  margin: 0;
+  border-bottom: 1px solid rgba(229, 229, 229);
 }
 
 .review-form__phone-number {
@@ -115,8 +166,39 @@
   line-height: 26px;
   color: rgba(51, 51, 51);
   width: 280px;
-  margin-top: 28px;
-  margin-bottom: 18px;
+  margin-top: 21px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.review-form__m-number {
+  margin-left: 22px;
+}
+
+.review-form__phone-number::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 57px;
+  background-color: rgba(230, 230, 230);
+  top: 36%;
+  right: 0;
+}
+
+.review-form__email::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-mail.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 58px;
+  height: 57px;
+  background-color: rgba(230, 230, 230);
+  top: 36%;
+  right: 0;
 }
 
 .review-form__email {
@@ -125,13 +207,20 @@
   color: rgba(51, 51, 51);
   margin-top: 0;
   margin-bottom: 28px;
+  position: relative;
+}
+
+.review-form__e-mail {
+  margin-left: 22px;
 }
 
 .review-form__general-impression {
   border: 0;
   background-color: rgba(255, 255, 255);
   padding: 0 20px;
+  padding-bottom: 16px;
   margin: 0;
+  border-bottom: 1px solid rgba(229, 229, 229);
 }
 
 .review-form__radio {
@@ -140,14 +229,36 @@
   margin-right: 22px;
 }
 
+.review-form__radio-choice::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  width: 56px;
+  height: 56px;
+  background-image: url("../img/icon-radio-no.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.review-form__radio:checked + .review-form__radio-choice::before {
+  background-image: url("../img/icon-radio.svg");
+  width: 56px;
+}
+
+.review-form__radio-choice {
+  margin-left: 78px;
+}
+
 .review-form__first-option {
   text-transform: none;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: rgba(0, 0, 0);
-  margin-top: 25px;
-  margin-bottom: 12px;
+  margin-top: 37px;
+  margin-bottom: 45px;
+  position: relative;
 }
 
 .review-form__second-option {
@@ -157,7 +268,8 @@
   font-weight: 700;
   color: rgba(0, 0, 0);
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 43px;
+  position: relative;
 }
 
 .review-form__third-option {
@@ -168,6 +280,7 @@
   color: rgba(0, 0, 0);
   margin-top: 0;
   margin-bottom: 26px;
+  position: relative;
 }
 
 .review-form__seesight {
@@ -175,6 +288,8 @@
   background-color: rgba(255, 255, 255);
   padding: 0 20px;
   margin: 0;
+  border-bottom: 1px solid rgba(229, 229, 229);
+  padding-bottom: 16px;
 }
 
 .review-form__checkbox {
@@ -189,8 +304,9 @@
   font-weight: 700;
   color: rgba(0, 0, 0);
   text-transform: none;
-  margin-top: 20px;
-  margin-bottom: 24px;
+  margin-top: 32px;
+  margin-bottom: 54px;
+  position: relative;
 }
 
 .review-form__second-seesight {
@@ -200,7 +316,8 @@
   color: rgba(0, 0, 0);
   text-transform: none;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 55px;
+  position: relative;
 }
 
 .review-form__third-seesight {
@@ -210,7 +327,8 @@
   color: rgba(0, 0, 0);
   text-transform: none;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 54px;
+  position: relative;
 }
 
 .review-form__fourth-seesight {
@@ -221,6 +339,28 @@
   text-transform: none;
   margin-top: 0;
   margin-bottom: 25px;
+  position: relative;
+}
+
+.review-form__checkbox-choice::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  width: 56px;
+  height: 56px;
+  background-color: rgba(242, 242, 242);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.review-form__checkbox:checked + .review-form__checkbox-choice::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.review-form__checkbox-choice {
+  margin-left: 79px;
 }
 
 .review-form__emotions {
@@ -237,14 +377,17 @@
   color: rgba(0, 0, 0);
   background-color: rgba(242, 242, 242);
   border: 0;
-  margin-top: 20px;
-  margin-bottom: 51px;
-  width: 280px;
-  height: 160px;
+  margin-top: 18px;
+  margin-bottom: 47px;
+  padding-top: 15px;
+  padding-left: 21px;
+  padding-right: 0;
+  padding-bottom: 18px;
 }
 
 .review-form__send-review {
   margin: 0;
+  margin-bottom: 37px;
 }
 
 .review-form__button {
@@ -260,18 +403,39 @@
   width: 280px;
 }
 
+.review-form__button:hover {
+  background-color: rgba(102, 158, 192);
+}
+
+.review-form__button:active {
+  background-color: rgba(84, 150, 189);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.review-form__button:disabled {
+  background-color: rgba(229, 229, 229);
+}
+
 .review-form__required {
   display: none;
 }
 
 @media (min-width: 768px) {
+  .review-form__email::after {
+    top: 35.8%;
+  }
+
+  .review-form__second-seesight .review-form__checkbox-choice::before {
+    top: -15px;
+  }
+
   .review-form__required {
     display: block;
     text-transform: uppercase;
     width: 196px;
     margin: 0;
     margin-left: 128px;
-    padding-top: 24px;
+    padding-top: 20px;
     text-align: right;
   }
 
@@ -285,16 +449,46 @@
     order: 1;
     padding: 0;
     width: 324px;
-    /*t*/
-    min-height: 371px;
+    border-bottom: 0;
+  }
+
+  .review-form__seesight::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    top: 25px;
+    background-color: rgba(219, 219, 219);
+    right: 0;
+  }
+
+  .review-form__seesight::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    top: 25px;
+    background-color: rgba(219, 219, 219);
+    left: 0;
   }
 
   .review-form__full-name {
     width: 324px;
     order: 2;
     padding: 0;
-    /*t*/
-    min-height: 371px;
+    border-bottom: 0;
+    margin-bottom: 70px;
+    position: relative;
+  }
+
+  .review-form__full-name::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 292px;
+    background-color: rgba(219, 219, 219);
+    top: 0;
+    right: 100%;
   }
 
   .review-form__contact-info {
@@ -302,15 +496,37 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    /*t*/
-    min-height: 308px;
+    border: 0;
+    position: relative;
+  }
+
+  .review-form__contact-info::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    top: 12px;
+    background-color: rgba(219, 219, 219);
+    left: 0;
+  }
+
+  .review-form__contact-info::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 125px;
+    top: 12px;
+    background-color: rgba(219, 219, 219);
+    right: 0;
   }
 
   .review-form__seesight {
+    border: 0;
     order: 4;
     padding: 0;
     margin: 0;
     width: 100%;
+    position: relative;
   }
 
   .review-form__emotions {
@@ -318,9 +534,13 @@
     padding: 0;
     margin: 0;
     width: 100%;
+    position: relative;
   }
 
   .review-form__title {
+    font-size: 21px;
+    line-height: 26px;
+
     &--greeting {
       padding: 0;
       width: 267px;
@@ -348,23 +568,30 @@
     &--express-emotions {
       padding: 0;
       width: 100%;
+      padding-top: 13px;
     }
+  }
+
+  .review-form__radio-choice {
+    margin-left: 76px;
   }
 
   .review-form__text {
     &--first-name {
-      margin-left: 14px;
-      width: 192px;
+      margin-left: 11px;
+      width: 189px;
+      padding-right: 2px;
     }
 
     &--last-name {
-      margin-left: 13px;
-      width: 156px;
+      margin-left: 12px;
+      width: 153px;
     }
 
     &--surname {
-      margin-left: 16px;
-      width: 158px;
+      margin-left: 14px;
+      width: 154px;
+      padding-right: 2px;
     }
 
     &--your-phone-number {
@@ -385,7 +612,7 @@
   }
 
   .review-form__first-name {
-    margin-top: 59px;
+    margin-top: 58px;
     margin-left: 57px;
   }
 
@@ -396,32 +623,31 @@
 
   .review-form__surname {
     margin-left: 57px;
-    margin-bottom: 72px;
+    margin-bottom: 0;
   }
 
   .review-form__first-option {
-    margin-top: 60px;
-    margin-bottom: 22px;
+    margin-top: 72px;
+    margin-bottom: 53px;
   }
 
   .review-form__second-option {
     margin-top: 0;
-    margin-bottom: 22px;
+    margin-bottom: 53px;
   }
 
   .review-form__third-option {
     margin-top: 0;
-    margin-bottom: 72px;
+    margin-bottom: 0;
   }
 
   .review-form__phone-number {
     width: 100%;
-    margin-top: 32px;
-    margin-bottom: 29px;
+    margin: 25px 0;
   }
 
   .review-form__email {
-    margin-bottom: 56px;
+    margin-bottom: 52px;
   }
 
   .review-form__seesight-wrapper {
@@ -432,14 +658,14 @@
   .review-form__first-seesight {
     width: 229px;
     margin: 0;
-    margin-top: 43px;
-    margin-bottom: 32px;
+    margin-top: 58px;
+    margin-bottom: 62px;
     margin-left: 95px;
   }
 
   .review-form__second-seesight {
     width: 294px;
-    margin-top: 43px;
+    margin-top: 58px;
     margin-bottom: 32px;
     margin-left: 30px;
   }
@@ -458,12 +684,32 @@
     margin-bottom: 71px;
   }
 
+  .review-form__emotions::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(219, 219, 219);
+    height: 1px;
+    width: 125px;
+    top: 25px;
+    left: 0;
+  }
+
+  .review-form__emotions::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: rgba(219, 219, 219);
+    width: 125px;
+    height: 1px;
+  }
+
   .review-form__textarea {
-    margin-top: 60px;
-    width: 100%;
-    margin-bottom: 58px;
-    padding-top: 20px;
-    padding-left: 20px;
+    margin-top: 58px;
+    width: 626px;
+    margin-bottom: 53px;
+    padding-top: 15px;
+    padding-left: 22px;
   }
 
   .review-form__send-review {
@@ -476,7 +722,7 @@
     padding: 16px 55px;
     margin: 0;
     width: 324px;
-    margin-bottom: 62px;
+    margin-bottom: 60px;
   }
 }
 
@@ -484,6 +730,7 @@
   .review-form__required {
     margin-left: 284px;
     margin-bottom: 68px;
+    padding-top: 22px;
   }
 
   .review-form__feedback {
@@ -498,20 +745,12 @@
 
   .review-form__general-impression {
     width: 480px;
-    margin-bottom: 50px;
-    /*t*/
-    min-height: 310px;
+    margin-bottom: 0;
   }
 
   .review-form__full-name {
     width: 480px;
-    /*t*/
-    min-height: 310px;
-  }
-
-  .review-form__contact-info {
-    /*t*/
-    min-height: 213px;
+    margin-bottom: 0;
   }
 
   .review-form__title {
@@ -533,28 +772,27 @@
 
   .review-form__text {
     &--first-name {
-      margin-left: 14px;
-      width: 325px;
+      width: 321px;
+      padding-right: 3px;
     }
 
     &--last-name {
-      margin-left: 13px;
-      width: 289px;
+      width: 285px;
+      padding-right: 1px;
     }
 
     &--surname {
-      margin-left: 16px;
-      width: 291px;
+      width: 287px;
       margin-bottom: 12px;
     }
 
     &--your-phone-number {
-      width: 258px;
-      margin-left: 15px;
+      width: 238px;
+      margin-left: 12px;
     }
 
     &--email {
-      width: 258px;
+      width: 238px;
       margin-left: 16px;
     }
   }
@@ -580,14 +818,18 @@
     margin-bottom: 58px;
   }
 
+  .review-form__radio-choice {
+    margin-left: 79px;
+  }
+
   .review-form__first-option {
-    margin-top: 62px;
-    margin-bottom: 22px;
+    margin-top: 74px;
+    margin-bottom: 52px;
   }
 
   .review-form__second-option {
     margin-top: 0;
-    margin-bottom: 22px;
+    margin-bottom: 52px;
   }
 
   .review-form__third-option {
@@ -602,14 +844,14 @@
   .review-form__phone-number {
     width: 400px;
     margin: 0;
-    margin-top: 76px;
-    margin-bottom: 56px;
+    margin-top: 67px;
+    margin-bottom: 53px;
   }
 
   .review-form__email {
     width: 480px;
-    margin-top: 76px;
-    margin-bottom: 56px;
+    margin-top: 67px;
+    margin-bottom: 53px;
     margin-left: 80px;
   }
 
@@ -621,41 +863,72 @@
   .review-form__first-seesight {
     width: 206px;
     margin: 0;
-    margin-top: 42px;
-    margin-bottom: 68px;
+    margin-top: 57px;
+    margin-bottom: 69px;
     margin-left: 0;
   }
 
   .review-form__second-seesight {
     width: 206px;
-    margin-top: 42px;
-    margin-bottom: 68px;
+    margin-top: 57px;
+    margin-bottom: 69px;
     margin-left: 53px;
   }
 
   .review-form__third-seesight {
-    margin-top: 42px;
+    margin-top: 57px;
     width: 206px;
     margin-left: 53px;
-    margin-bottom: 68px;
+    margin-bottom: 69px;
   }
 
   .review-form__fourth-seesight {
-    margin-top: 42px;
-    width: 206px;
-    margin-left: 30px;
-    margin-bottom: 68px;
+    margin-top: 57px;
+    width: 205px;
+    margin-left: 31px;
+    margin-bottom: 69px;
   }
 
   .review-form__textarea {
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 23px;
+    padding-top: 16px;
+    width: 937px;
+    padding-bottom: 16px;
   }
 
   .review-form__button {
     padding: 16px 133px;
+    padding-bottom: 17px;
     margin: 0;
     width: 480px;
-    margin-bottom: 68px;
+    margin-bottom: 67px;
+  }
+
+  .review-form__radio-choice::before {
+    margin-left: 5px;
+  }
+
+  .review-form__contact-info::before,
+  .review-form__contact-info::after {
+    width: 279px;
+  }
+
+  .review-form__phone-number::after,
+  .review-form__email::after {
+    top: 11%;
+  }
+
+  .review-form__seesight::after,
+  .review-form__seesight::before {
+    width: 280px;
+  }
+
+  .review-form__checkbox-choice {
+    margin-left: 80px;
+  }
+
+  .review-form__emotions::before,
+  .review-form__emotions::after {
+    width: 279px;
   }
 }
