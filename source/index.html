@@ -32,7 +32,11 @@
         </button>
       </nav>
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Logo of Sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Logo of Sedona">
+        </picture>
       </a>
     </header>
     <main class="page-main">
@@ -61,7 +65,11 @@
             </p>
           </div>
           <div class="reasons-block__image">
-            <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Photo of Sedona`s landscape">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@2x.jpg">
+              <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg" alt="Photo of Sedona`s landscape">
+            </picture>
           </div>
         </div>
         <ul class="reasons-block__list reasons-list">
@@ -102,8 +110,12 @@
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
           </div>
-          <div class="reasons-block__image">
-            <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Photo of Devil`s bridge">
+          <div class="reasons-block__image reasons-block__image--second-image">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@2x.jpg">
+              <img src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg" alt="Photo of Devil`s bridge">
+            </picture>
           </div>
         </div>
         <div class="reasons-block__wrapper reasons-block__wrapper--left-reasons">
