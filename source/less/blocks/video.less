@@ -30,9 +30,9 @@
 }
 
 .video__wrapper {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
   height: 267px;
-  width: 320px;
 }
 
 .video__wrapper img {
@@ -45,6 +45,7 @@
   margin: 0 20px;
   height: 45px;
   bottom: 50px;
+  width: 320px;
 }
 
 .video__scale {
@@ -72,51 +73,45 @@
   background-color: rgba(242, 242, 242);
   margin: 0 20px;
   height: 66px;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 50px;
 }
 
 .video__rewind {
   padding: 0;
   margin: 0;
   margin-top: 20px;
+  padding-right: 3px;
   width: 70px;
   border: 0;
   background-color: transparent;
+  fill: rgba(92, 104, 112);
 }
 
-.video__rewind svg {
-  margin-right: 4px;
-}
-
-.video__rewind:hover path {
+.video__rewind:hover {
   fill: rgba(51, 51, 51);
 }
 
-.video__rewind:active path {
+.video__rewind:active {
   fill: rgba(51, 51, 51, 0.3);
 }
 
 .video__subs {
   padding: 0;
   margin: 0;
-  width: 70px;
+  width: 40px;
   border: 0;
-  margin-left: 62px;/*t*/
-  margin-top: 20px;
+  margin-left: 97px;
+  margin-top: 22px;
   background-color: transparent;
+  fill: rgba(92, 104, 112);
 }
 
-.video__subs svg {
-  margin-top: 3px;
-  margin-left: 39px;
-}
-
-.video__subs:hover path {
+.video__subs:hover {
   fill: rgba(51, 51, 51);
 }
 
-.video__subs:active path {
+.video__subs:active {
   fill: rgba(51, 51, 51, 0.3);
 }
 
@@ -124,20 +119,18 @@
   margin: 0;
   padding: 0;
   border: 0;
-  width: 70px;
+  width: 40px;
   margin-top: 20px;
+  margin-left: 13px;
   background-color: transparent;
+  fill: rgba(92, 104, 112);
 }
 
-.video__full-view svg {
-  margin-left: 6px;
-}
-
-.video__full-view:hover polygon {
+.video__full-view:hover {
   fill: rgba(51, 51, 51);
 }
 
-.video__full-view:active polygon {
+.video__full-view:active {
   fill: rgba(51, 51, 51, 0.3);
 }
 
@@ -171,6 +164,7 @@
     margin: 0;
     height: 92px;
     bottom: 19.7%;
+    width: 648px;
   }
 
   .video__scale {
@@ -194,69 +188,44 @@
 
   .video__rewind {
     margin-top: 35px;
-    margin-left: 23px;
+    margin-left: 8px;
+    fill: rgba(255, 255, 255);
+    padding: 0;
   }
 
   .video__subs {
-    margin-left: 407px;/*t*/
+    margin-left: 439px;
     margin-top: 36px;
+    fill: rgba(255, 255, 255);
   }
 
   .video__full-view {
     margin-top: 36px;
-  }
-
-  .video__rewind path {
     fill: rgba(255, 255, 255);
   }
 
-  .video__rewind:hover path {
+  .video__rewind:hover {
     fill: rgba(255, 255, 255, 0.6);
   }
 
-  .video__rewind:active path {
+  .video__rewind:active {
     fill: rgba(255, 255, 255, 0.3);
   }
 
-  .video__subs path {
-    fill: rgba(255, 255, 255);
-  }
-
-  .video__subs:hover path {
+  .video__subs:hover {
     fill: rgba(255, 255, 255, 0.6);
   }
 
-  .video__subs:active path {
+  .video__subs:active {
     fill: rgba(255, 255, 255, 0.3);
   }
 
-  .video__full-view polygon {
-    fill: rgba(255, 255, 255);
-  }
-
-  .video__full-view:hover polygon {
+  .video__full-view:hover {
     fill: rgba(255, 255, 255, 0.6);
   }
 
-  .video__full-view:active polygon {
+  .video__full-view:active {
     fill: rgba(255, 255, 255, 0.3);
-  }
-
-  .video__rewind svg {
-    margin-bottom: 11px;
-    margin-right: 29px;
-  }
-
-  .video__subs svg {
-    margin-left: 3px;
-    margin-bottom: 11px;
-    margin-top: 0;
-  }
-
-  .video__full-view svg {
-    margin-bottom: 11px;
-    margin-right: 29px;
-    margin-left: 0;
   }
 }
 
@@ -284,6 +253,7 @@
   }
 
   .video__control {
+    width: 800px;
     bottom: 19.9%;
   }
 
@@ -297,20 +267,6 @@
   }
 
   .video__subs {
-    margin-left: 559px;/*t*/
-  }
-
-  .video__rewind svg {
-    margin-bottom: 13px;
-  }
-
-  .video__subs svg {
-    margin-left: 0;
-    margin-bottom: 11px;
-  }
-
-  .video__full-view svg {
-    margin-bottom: 12px;
-    margin-right: 32px;
+    margin-left: 589px;
   }
 }
