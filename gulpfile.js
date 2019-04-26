@@ -27,6 +27,7 @@ gulp.task("css", function () {
     .pipe(rename("stile.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 gulp.task("images", function() {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
