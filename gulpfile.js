@@ -69,7 +69,7 @@ gulp.task("minify", function () {
   }))
   .pipe(gulp.dest("build"));
 });
-gulp.taks("compress", function () {
+gulp.task("compress", function () {
   return pipeline(
     gulp.src("source/**/*.js"),
     uglify(),
