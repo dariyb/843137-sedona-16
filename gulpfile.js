@@ -117,4 +117,4 @@ gulp.task("build", gulp.series(
   "minify",
   "compress"
 ));
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("build", "server"));
