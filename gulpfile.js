@@ -60,9 +60,11 @@ gulp.task("html", function () {
   ]))
   .pipe(gulp.dest("build"));
 });
-gulp.task("html-min", function () {
+gulp.task("minify", function () {
   return gulp.src("source/*.html")
-  .pipe(htmlmin())
+  .pipe(htmlmin({
+    collapseWhitespace: true
+  }))
   .pipe(gulp.dest("build"));
 })
 gulp.task("server", function () {
@@ -103,6 +105,7 @@ gulp.task("build", gulp.series(
   "images",
   "webp",
   "sprite",
-  "html-min"
+  "html",
+  "minify"
 ));
 gulp.task("start", gulp.series("css", "server"));
