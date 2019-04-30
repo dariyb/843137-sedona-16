@@ -114,6 +114,7 @@ gulp.task("build", gulp.series(
   "images",
   "webp",
   "sprite",
+  "html",
   "minify",
   "compress"
 ));
