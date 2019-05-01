@@ -63,7 +63,7 @@ gulp.task("html", function () {
   .pipe(gulp.dest("build"));
 });
 gulp.task("minify", function () {
-  return gulp.src("source/*.html")
+  return gulp.src("build/*.html")
   .pipe(htmlmin({
     collapseWhitespace: true
   }))
