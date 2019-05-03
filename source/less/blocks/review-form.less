@@ -1,18 +1,18 @@
 .review-form {
-  background-color: rgba(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .review-form__checkbox-choice:hover::before {
-  background-color: rgba(229, 229, 229);
+  background-color: rgb(229, 229, 229);
 }
 
 .review-form__checkbox-choice:active::before {
-  background-color: rgba(213, 213, 213);
+  background-color: rgb(213, 213, 213);
 }
 
 .review-form__checkbox:checked:active + .review-form__checkbox-choice:active::before {
   background-image: url("../img/icon-tick-a.svg");
-  background-color: rgba(213, 213, 213);
+  background-color: rgb(213, 213, 213);
 }
 
 .review-form__radio-choice:hover::before {
@@ -33,17 +33,17 @@
 
 .review-form__full-name {
   border: 0;
-  background-color: rgba(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   padding: 0 20px;
   margin: 0;
-  border-bottom: 1px solid rgba(229, 229, 229);
+  border-bottom: 1px solid rgb(229, 229, 229);
 }
 
 .review-form__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
   text-align: center;
   margin: 0;
   padding: 0;
@@ -80,36 +80,38 @@
 .review-form__first-name {
   font-size: 14px;
   line-height: 26px;
-  color: rgba(51, 51, 51);
+  color: rgb(51, 51, 51);
   font-weight: 400;
   margin: 0;
   margin-top: 23px;
+  display: flex;
+  align-items: center;
 }
 
 .review-form__text {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0);
-  background-color: rgba(242, 242, 242);
+  font-family: inherit;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 242, 242);
   padding-top: 12px;
   padding-left: 16px;
   padding-bottom: 12px;
-  border: 4px solid rgba(242, 242, 242);
+  border: 4px solid rgb(242, 242, 242);
+  width: 100%;
+  min-width: 150px;
 
   &--first-name {
-    width: 205px;
     margin-left: 10px;
   }
 
   &--last-name {
     margin-left: 11px;
-    width: 167px;
   }
 
   &--surname {
     margin-left: 14px;
-    width: 169px;
   }
 
   &--your-phone-number {
@@ -124,47 +126,51 @@
 }
 
 .review-form__text:hover {
-  background-color: rgba(229, 229, 229);
-  border-color: rgba(229, 229, 229);
+  background-color: rgb(229, 229, 229);
+  border-color: rgb(229, 229, 229);
 }
 
 .review-form__text:focus {
   outline: none;
-  background-color: rgba(255, 255, 255);
-  border: 4px solid rgba(229, 229, 229);
+  background-color: rgb(255, 255, 255);
+  border: 4px solid rgb(229, 229, 229);
 }
 
 .review-form__text::placeholder {
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .review-form__last-name {
   font-size: 14px;
   line-height: 26px;
-  color: rgba(51, 51, 51);
+  color: rgb(51, 51, 51);
   margin: 20px 0;
+  display: flex;
+  align-items: center;
 }
 
 .review-form__surname {
   font-size: 14px;
   line-height: 26px;
-  color: rgba(51, 51, 51);
+  color: rgb(51, 51, 51);
   margin-top: 0;
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
 }
 
 .review-form__contact-info {
   border: 0;
-  background-color: rgba(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   padding: 0 20px;
   margin: 0;
-  border-bottom: 1px solid rgba(229, 229, 229);
+  border-bottom: 1px solid rgb(229, 229, 229);
 }
 
 .review-form__phone-number {
   font-size: 14px;
   line-height: 26px;
-  color: rgba(51, 51, 51);
+  color: rgb(51, 51, 51);
   width: 280px;
   margin-top: 21px;
   margin-bottom: 12px;
@@ -182,8 +188,8 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 58px;
-  height: 57px;
-  background-color: rgba(230, 230, 230);
+  height: 58px;
+  background-color: rgb(230, 230, 230);
   top: 36%;
   right: 0;
 }
@@ -195,8 +201,8 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 58px;
-  height: 57px;
-  background-color: rgba(230, 230, 230);
+  height: 58px;
+  background-color: rgb(230, 230, 230);
   top: 36%;
   right: 0;
 }
@@ -204,7 +210,7 @@
 .review-form__email {
   font-size: 14px;
   line-height: 26px;
-  color: rgba(51, 51, 51);
+  color: rgb(51, 51, 51);
   margin-top: 0;
   margin-bottom: 27px;
   position: relative;
@@ -216,17 +222,27 @@
 
 .review-form__general-impression {
   border: 0;
-  background-color: rgba(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   padding: 0 20px;
   padding-bottom: 17px;
   margin: 0;
-  border-bottom: 1px solid rgba(229, 229, 229);
+  border-bottom: 1px solid rgb(229, 229, 229);
 }
 
 .review-form__radio {
   padding: 0;
   margin: 0;
   margin-right: 22px;
+}
+
+.review-form__radio:focus + .review-form__radio-choice::before {
+  outline: 1px dashed rgb(51, 51, 51);
+  outline-offset: 2px;
+}
+
+.review-form__checkbox:focus + .review-form__checkbox-choice::before {
+  outline: 1px dashed rgb(51, 51, 51);
+  outline-offset: 2px;
 }
 
 .review-form__radio-choice::before {
@@ -255,7 +271,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
   margin-top: 37px;
   margin-bottom: 43px;
   position: relative;
@@ -266,7 +282,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
   margin-top: 0;
   margin-bottom: 43px;
   position: relative;
@@ -277,7 +293,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
   margin-top: 0;
   margin-bottom: 26px;
   position: relative;
@@ -285,10 +301,10 @@
 
 .review-form__seesight {
   border: 0;
-  background-color: rgba(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   padding: 0 20px;
   margin: 0;
-  border-bottom: 1px solid rgba(229, 229, 229);
+  border-bottom: 1px solid rgb(229, 229, 229);
   padding-bottom: 16px;
 }
 
@@ -302,7 +318,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
   text-transform: none;
   margin-top: 30px;
   margin-bottom: 54px;
@@ -313,7 +329,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
   text-transform: none;
   margin-top: 0;
   margin-bottom: 55px;
@@ -324,7 +340,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
   text-transform: none;
   margin-top: 0;
   margin-bottom: 53px;
@@ -335,7 +351,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0);
+  color: rgb(0, 0, 0);
   text-transform: none;
   margin-top: 0;
   margin-bottom: 25px;
@@ -349,7 +365,7 @@
   bottom: -17px;
   width: 56px;
   height: 56px;
-  background-color: rgba(242, 242, 242);
+  background-color: rgb(242, 242, 242);
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -365,7 +381,7 @@
 
 .review-form__emotions {
   border: 0;
-  background-color: rgba(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 0 20px;
 }
@@ -374,23 +390,27 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: rgba(0, 0, 0);
-  background-color: rgba(242, 242, 242);
+  font-family: inherit;
+  color: rgb(0, 0, 0);
+  background-color: rgb(242, 242, 242);
   border: 0;
+  width: 259px;
   margin-top: 18px;
   margin-bottom: 45px;
   padding-top: 15px;
   padding-left: 21px;
-  padding-right: 10px;
+  padding-right: 0;
   padding-bottom: 14px;
 }
 
 .review-form__textarea:focus {
   outline: 0;
-  border: 4px solid rgba(229, 229, 229);
+  border: 4px solid rgb(229, 229, 229);
+  width: 255px;
   padding-top: 11px;
   padding-left: 16px;
   padding-bottom: 10px;
+  background-color: rgb(255, 255, 255);
 }
 
 .review-form__send-review {
@@ -399,12 +419,13 @@
 }
 
 .review-form__button {
-  background-color: rgba(129, 179, 210);
+  background-color: rgb(129, 179, 210);
   border: 0;
-  color: rgba(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  font-family: inherit;
   text-transform: uppercase;
   padding: 16px 33px;
   margin: 0;
@@ -412,16 +433,16 @@
 }
 
 .review-form__button:hover {
-  background-color: rgba(102, 158, 192);
+  background-color: rgb(102, 158, 192);
 }
 
 .review-form__button:active {
-  background-color: rgba(84, 150, 189);
+  background-color: rgb(84, 150, 189);
   color: rgba(255, 255, 255, 0.3);
 }
 
 .review-form__button:disabled {
-  background-color: rgba(229, 229, 229);
+  background-color: rgb(229, 229, 229);
 }
 
 .review-form__required {
@@ -464,9 +485,9 @@
     content: "";
     position: absolute;
     height: 1px;
-    width: 125px;
+    width: 19%;
     top: 25px;
-    background-color: rgba(219, 219, 219);
+    background-color: rgb(219, 219, 219);
     right: 0;
   }
 
@@ -474,9 +495,9 @@
     content: "";
     position: absolute;
     height: 1px;
-    width: 125px;
+    width: 19%;
     top: 25px;
-    background-color: rgba(219, 219, 219);
+    background-color: rgb(219, 219, 219);
     left: 0;
   }
 
@@ -494,7 +515,7 @@
     position: absolute;
     width: 1px;
     height: 292px;
-    background-color: rgba(219, 219, 219);
+    background-color: rgb(219, 219, 219);
     top: 0;
     right: 100%;
   }
@@ -512,9 +533,9 @@
     content: "";
     position: absolute;
     height: 1px;
-    width: 125px;
+    width: 19%;
     top: 12px;
-    background-color: rgba(219, 219, 219);
+    background-color: rgb(219, 219, 219);
     left: 0;
   }
 
@@ -522,9 +543,9 @@
     content: "";
     position: absolute;
     height: 1px;
-    width: 125px;
+    width: 19%;
     top: 12px;
-    background-color: rgba(219, 219, 219);
+    background-color: rgb(219, 219, 219);
     right: 0;
   }
 
@@ -695,9 +716,9 @@
   .review-form__emotions::before {
     content: "";
     position: absolute;
-    background-color: rgba(219, 219, 219);
+    background-color: rgb(219, 219, 219);
     height: 1px;
-    width: 125px;
+    width: 19%;
     top: 25px;
     left: 0;
   }
@@ -707,8 +728,8 @@
     position: absolute;
     top: 25px;
     right: 0;
-    background-color: rgba(219, 219, 219);
-    width: 125px;
+    background-color: rgb(219, 219, 219);
+    width: 19%;
     height: 1px;
   }
 
@@ -719,6 +740,11 @@
     padding-top: 15px;
     padding-left: 22px;
     padding-right: 0;
+  }
+
+  .review-form__textarea:focus {
+    width: 622px;
+    padding-left: 18px;
   }
 
   .review-form__send-review {
@@ -905,6 +931,13 @@
     padding-bottom: 13px;
   }
 
+  .review-form__textarea:focus {
+    width: 933px;
+    padding-top: 12px;
+    padding-left: 19px;
+    padding-bottom: 9px;
+  }
+
   .review-form__button {
     padding: 16px 133px;
     margin: 0;
@@ -918,7 +951,7 @@
 
   .review-form__contact-info::before,
   .review-form__contact-info::after {
-    width: 279px;
+    width: 29%;
   }
 
   .review-form__phone-number::after,
@@ -928,7 +961,7 @@
 
   .review-form__seesight::after,
   .review-form__seesight::before {
-    width: 280px;
+    width: 29%;
   }
 
   .review-form__checkbox-choice {
@@ -937,6 +970,6 @@
 
   .review-form__emotions::before,
   .review-form__emotions::after {
-    width: 279px;
+    width: 29%;
   }
 }

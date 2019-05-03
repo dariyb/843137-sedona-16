@@ -1,21 +1,31 @@
 .main-nav {
-  background-color: rgba(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   position: relative;
 }
 
 .main-nav__toggle {
-  background-color: rgba(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   position: absolute;
   top: 224px;
   right: 0;
   z-index: 2;
   display: block;
   width: 63px;
-  height: 56px;
+  height: 54px;
   border: none;
   cursor: pointer;
   padding: 0;
-  border-bottom: 1px solid rgba(103, 143, 168);
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -32,7 +42,7 @@
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: 0;
-  background-color: rgba(129, 179, 210);
+  background-color: rgb(129, 179, 210);
 
   &::after {
     content: "";
@@ -41,16 +51,16 @@
     height: 24px;
     background-image: url("../img/icon-cross.svg");
     background-repeat: no-repeat;
-    background-color: rgba(129, 179, 210);
+    background-color: rgb(129, 179, 210);
     top: 16px;
     right: 20px;
   }
 }
 
 .main-nav__list {
-  background-color: rgba(129, 179, 210);
+  background-color: rgb(129, 179, 210);
   list-style: none;
-  color: rgba(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
@@ -70,12 +80,12 @@
   .main-nav__list {
     font-size: 14px;
     line-height: 26px;
-    color: rgba(0, 0, 0);
+    color: rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
     width: 768px;
     margin: 0;
-    background-color: rgba(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     padding: 14px 0;
     padding-bottom: 16px;
   }
