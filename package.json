@@ -21,6 +21,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
+    "imagemin-jpegoptim": "^6.0.0",
     "posthtml-include": "^1.2.0",
     "readable-stream": "^3.3.0",
     "stylelint": "9.10.x",
