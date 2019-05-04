@@ -1,5 +1,7 @@
 .reasons-list__item {
   padding: 0 20px;
+  position: relative;
+  box-sizing: border-box;
 
   &--food {
     padding-bottom: 38px;
@@ -16,7 +18,7 @@
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  top: 6.25%;
+  top: 18%;
   left: 6.5%;
   width: 39px;
   height: 37px;
@@ -32,7 +34,7 @@
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  top: 37.26%;
+  top: 15%;
   left: 7.81%;
   width: 32px;
   height: 38px;
@@ -44,7 +46,7 @@
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  top: 65.1%;
+  top: 14%;
   left: 5.625%;
   width: 39px;
   height: 35px;
@@ -72,8 +74,6 @@
 @media (min-width: 768px) {
   .reasons-list__item {
     width: 33%;
-    padding: 56px 43px;
-    padding-bottom: 61px;
     text-align: center;
   }
 
@@ -86,7 +86,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     top: 17.57%;
-    left: 11.6%;
+    left: 35%;
     width: 77px;
     height: 74px;
   }
@@ -96,7 +96,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     top: 16.6%;
-    left: 79%;
+    left: 39.5%;
     width: 65px;
     height: 78px;
   }
@@ -106,19 +106,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     top: 18.8%;
-    left: 44.8%;
+    left: 36%;
     width: 78px;
     height: 70px;
   }
 
   .reasons-list__item--housing {
-    padding: 56px 48px;
+    padding-top: 56px;
     padding-left: 45px;
+    padding-right: 43px;
+    padding-bottom: 45px;
   }
 
   .reasons-list__item--gift {
     order: 3;
-    padding: 56px 45px;
+    padding-top: 56px;
+    padding-left: 51px;
+    padding-right: 39px;
+    padding-bottom: 45px;
+  }
+
+  .reasons-list__item--food {
+    padding-top: 56px;
+    padding-left: 49px;
+    padding-right: 41px;
+    padding-bottom: 45px;
   }
 
   .reasons-list__title {
@@ -156,7 +168,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     top: 17.57%;
-    left: 13.4%;
+    left: 40%;
     width: 75px;
     height: 73px;
   }
@@ -166,7 +178,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     top: 16.6%;
-    left: 80.5%;
+    left: 41.5%;
     width: 65px;
     height: 78px;
   }
@@ -176,7 +188,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     top: 18.8%;
-    left: 46.8%;
+    left: 40%;
     width: 78px;
     height: 70px;
   }
