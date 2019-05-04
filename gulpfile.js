@@ -129,6 +129,7 @@ gulp.task("build", gulp.series(
   "images",
   "webp",
   "sprite",
+  "clean-svg",
   "html",
   "minify",
   "compress"
