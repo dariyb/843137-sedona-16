@@ -3,6 +3,24 @@
   position: relative;
 }
 
+.main-nav__toggle {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 224px;
+  right: 0;
+  z-index: 2;
+  display: none;
+  width: 63px;
+  height: 54px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.main-nav--closed .main-nav__toggle {
+  display: block;
+}
+
 .main-nav__toggle::before {
   content: "";
   position: absolute;
@@ -12,6 +30,7 @@
   height: 24px;
   background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
+  display: block;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -29,6 +48,7 @@
   top: 0;
   right: 0;
   background-color: rgb(129, 179, 210);
+  display: block;
 
   &::after {
     content: "";
