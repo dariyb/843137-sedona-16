@@ -6,6 +6,22 @@
   background-color: rgb(229, 229, 229);
 }
 
+.review-form__checkbox:disabled + .review-form__checkbox-choice {
+  color: rgba(51, 51, 51, 0.3);
+}
+
+.review-form__radio:disabled + .review-form__radio-choice {
+  color: rgba(51, 51, 51, 0.3);
+}
+
+.review-form__checkbox:disabled + .review-form__checkbox-choice::before {
+  background-color: rgba(240, 240, 240, 0.3);
+}
+
+.review-form__radio:disabled + .review-form__radio-choice::before {
+  background-image: url("../img/icon-radio-d.svg");
+}
+
 .review-form__checkbox-choice:active::before {
   background-color: rgb(213, 213, 213);
 }
