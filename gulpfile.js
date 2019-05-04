@@ -35,7 +35,7 @@ gulp.task("css", function () {
 });
 gulp.task('images', function () {
   const jpegoptim = require('imagemin-jpegoptim');
-  return gulp.src("source/img/**/*.{jpg,png,svg}')
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng(),
       imagemin.svgo({
