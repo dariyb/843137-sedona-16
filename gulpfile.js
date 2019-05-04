@@ -118,6 +118,9 @@ gulp.task("copy", function () {
 gulp.task("clean", function() {
   return del("build");
 });
+gulp.task("clean-svg", function() {
+  return del("build/img/**/s-*.svg");
+});
 
 gulp.task("build", gulp.series(
   "clean",
