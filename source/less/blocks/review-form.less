@@ -6,6 +6,22 @@
   background-color: rgb(229, 229, 229);
 }
 
+.review-form__checkbox:disabled + .review-form__checkbox-choice {
+  color: rgba(51, 51, 51, 0.3);
+}
+
+.review-form__radio:disabled + .review-form__radio-choice {
+  color: rgba(51, 51, 51, 0.3);
+}
+
+.review-form__checkbox:disabled + .review-form__checkbox-choice::before {
+  background-color: rgba(240, 240, 240, 0.3);
+}
+
+.review-form__radio:disabled + .review-form__radio-choice::before {
+  background-image: url("../img/icon-radio-d.svg");
+}
+
 .review-form__checkbox-choice:active::before {
   background-color: rgb(213, 213, 213);
 }
@@ -49,9 +65,7 @@
   padding: 0;
 
   &--greeting {
-    padding: 17px 69px;
-    padding-bottom: 0;
-    padding-left: 67px;
+    padding-top: 17px;
   }
 
   &--contacts {
@@ -401,6 +415,10 @@
   padding-left: 21px;
   padding-right: 0;
   padding-bottom: 14px;
+
+  &::placeholder {
+    color: rgb(0, 0, 0);
+  }
 }
 
 .review-form__textarea:focus {
@@ -874,6 +892,7 @@
 
   .review-form__info-wrapper {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .review-form__phone-number {
